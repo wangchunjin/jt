@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="swbs" extends="default" namespace="/sys/swbs">
+			 <action name="ShowSwbsTree" class="com.epmis.sys.web.SwbsAction" method="ShowSwbsTree">
+		     </action>
+		     <action name="ShowSwbsMoveTree" class="com.epmis.sys.web.SwbsAction" method="ShowSwbsMoveTree">
+		     </action>
+		     <action name="MoveSwbs" class="com.epmis.sys.web.SwbsAction" method="MoveSwbs">
+		     </action>
+		     <action name="CopySwbs" class="com.epmis.sys.web.SwbsAction" method="CopySwbs">
+		     </action>
+		    <action name="ShowSwbsTypeTable" class="com.epmis.sys.web.SwbsAction" method="ShowSwbsTypeTable">
+		     </action>
+			 <action name="swbs_remark_label" class="com.epmis.sys.web.SwbsAction" method="GetLabel">
+		         <result name="success">
+				      /web/SYS/SWBS/swbs_remark_label.jsp
+			     </result>
+		     </action>
+		     <action name="swbs_label" class="com.epmis.sys.web.SwbsAction" method="GetLabel">
+		         <result name="success">
+				      /web/SYS/SWBS/swbs_label.jsp
+			     </result>
+		     </action>
+		     <action name="UpdateSwbs" class="com.epmis.sys.web.SwbsAction" method="UpdateSwbs">
+		    	<result name="info">
+				      /web/SYS/SWBS/swbs_label.jsp
+			     </result>
+			     <result name="remark">
+				     /web/SYS/SWBS/swbs_remark_label.jsp
+			     </result>
+		     </action>
+		     <action name="task_remark_label" class="com.epmis.sys.web.SwbsAction" method="GetLabel">
+		         <result name="success">
+				      /web/SYS/SWBS/task_remark_label.jsp
+			     </result>
+		     </action>
+		     <action name="task_label" class="com.epmis.sys.web.SwbsAction" method="GetLabel">
+		         <result name="success">
+				     /web/SYS/SWBS/task_label.jsp
+			     </result>
+		     </action>
+		     <action name="UpdateTask" class="com.epmis.sys.web.SwbsAction" method="UpdateSwbs">
+		    	<result name="info">
+				      /web/SYS/SWBS/task_label.jsp
+			     </result>
+			     <result name="remark">
+				     /web/SYS/SWBS/task_guid.jsp
+			     </result>
+			     <result name="taskremark">
+				     /web/SYS/SWBS/task_remark_label.jsp
+			     </result>
+		     </action>
+		     <action name="DelSwbsType" class="com.epmis.sys.web.SwbsAction" method="DelSwbsType">
+		     </action>
+		      <action name="impSwbsModule" class="com.epmis.sys.web.SwbsAction" method="impSwbsModule">
+		     </action>
+		     <action name="task_guid" class="com.epmis.sys.web.SwbsAction" method="GetLabel">
+		         <result name="success">
+				     /web/SYS/SWBS/task_guid.jsp
+			     </result>
+		     </action>
+		     <action name="task_refdata">
+		         <result name="success">
+				     /web/SYS/SWBS/task_refdata.jsp
+			     </result>
+		     </action>
+		     <action name="task_struct">
+		         <result name="success">
+				     /web/SYS/SWBS/task_struct.jsp
+			     </result>
+		     </action>
+		    <action name="PlanRefDataTable" class="com.epmis.sys.web.SwbsAction" method="PlanRefDataTable">
+		     </action>
+		     <action name="AddDocLink" class="com.epmis.sys.web.SwbsAction" method="AddDocLink">
+		     </action>
+		     <action name="delDocLink" class="com.epmis.sys.web.SwbsAction" method="delDocLink">
+		     </action>		     
+		     <action name="PlanStructTable" class="com.epmis.sys.web.SwbsAction" method="PlanStructTable">
+		     </action>
+		     <action name="AddSwbs" class="com.epmis.sys.web.SwbsAction" method="AddSwbs">
+		     </action>
+		     <action name="delSwbs" class="com.epmis.sys.web.SwbsAction" method="delSwbs">
+		     </action>
+		    <action name="moduleSave" class="com.epmis.sys.web.SwbsAction" method="moduleSave">
+		     </action>
+	</package>
+</struts>

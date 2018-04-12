@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="tadv" namespace="/adv/tadv" extends="default">
+		<action name="findAllAdv" class="com.epmis.jt.adv.web.AdvAction" method="findAllAdv">			
+		</action>
+		<action name="delete" class="com.epmis.jt.adv.web.AdvAction" method="delete">			
+		</action>
+		<action name="deletez" class="com.epmis.jt.adv.web.AdvAction" method="deletez">			
+		</action>
+		<action name="save" class="com.epmis.jt.adv.web.AdvAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.jt.adv.web.AdvAction" method="findById">
+			<result name="success">
+				/web/JT/ADV/update.jsp
+			</result>	
+			<result name="look">
+				/web/JT/ADV/look.jsp
+			</result>		
+		</action>
+		<action name="update" class="com.epmis.jt.adv.web.AdvAction" method="update">		
+		</action>
+		
+		<!--位置 -->
+		<action name="wz" class="com.epmis.jt.adv.web.AdvAction" method="wz">		
+		</action>
+		
+		
+		
+
+	
+	
+	</package>
+</struts>

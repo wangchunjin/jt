@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.multipart.saveDir" value="" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<constant name="struts.multipart.maxSize" value="1073741824" />
+
+	<package name="default" extends="struts-default" namespace="">
+        <global-results>
+            <result name="error">/error.jsp</result>
+        </global-results>
+		<global-exception-mappings>
+			<exception-mapping exception="org.springframework.dao.DataAccessException" result="input" />
+			<exception-mapping exception="java.lang.Exception" result="error" />
+		</global-exception-mappings>
+	</package>
+	<include file="com/epmis/sys/conf/struts-common.xml" />
+	<include file="com/epmis/sys/conf/struts-proj.xml" />
+	<include file="com/epmis/sys/conf/struts-swbs.xml" />
+	<include file="com/epmis/sys/conf/struts-struct.xml" />
+	<include file="com/epmis/sys/conf/struts-catval.xml" />
+	<include file="com/epmis/sys/conf/struts-code.xml" />
+	<include file="com/epmis/sys/conf/struts-vnmt.xml" />
+	<include file="com/epmis/sys/conf/struts-user.xml" />
+	<include file="com/epmis/sys/conf/struts-role.xml" />
+	<include file="com/epmis/sys/conf/struts-first.xml" />
+	<include file="com/epmis/sys/conf/struts-profile.xml" />
+	<include file="com/epmis/sm/conf/struts-sm.xml" />
+	<include file="com/epmis/ds/conf/struts-ds.xml" />
+    <include file="com/epmis/cc/conf/struts-cc.xml" />
+    <include file="com/epmis/jd/conf/struts-jd.xml" />
+    <include file="com/epmis/co/conf/struts-co.xml" />
+    <include file="com/epmis/webService/conf/struts-service.xml" />
+    <include file="com/epmis/sys_ent/conf/struts-common.xml" />
+    <include file="com/epmis/report/conf/struts-report.xml" />
+    <include file="com/epmis/am/conf/struts-am.xml" />
+    <include file="com/epmis/wf_ent/conf/struts-wf.xml" />
+    <include file="com/epmis/products/conf/struts-products.xml" />
+    <include file="com/epmis/sys/region/conf/struts-region.xml" />
+    <include file="com/epmis/serve/conf/struts-service.xml" />
+    <include file="com/epmis/car/conf/struts-ceshi.xml" />       
+       <include file="com/epmis/user/conf/struts-user.xml" />      
+ 		<include file="com/epmis/km/conf/struts-km.xml" />
+  		<include file="com/epmis/aexcel/conf/struts-excel.xml"/>   
+  		<include file="com/epmis/acmuser/conf/struts-acmuser.xml"/>
+  		<include file="com/epmis/sysm/conf/struts-sysm.xml"/>
+  		<include file="com/epmis/aaexport/conf/struts-aaexport.xml"/>
+  		
+  		<include file="com/epmis/banner/conf/struts-banner.xml"/>
+  		
+  		
+  		<include file="com/epmis/dynamic/conf/struts-dynamic.xml"/>
+  		
+  		<include file="com/epmis/about/conf/struts-about.xml"/>
+  		
+		
+  		<include file="com/epmis/zs/conf/struts-zs.xml" />
+  		
+  		<include file="com/epmis/jt/adv/conf/struts-adv.xml" />
+  		<include file="com/epmis/jt/agree/conf/struts-agree.xml" />
+		<include file="com/epmis/jt/sysconf/conf/struts-sysconf.xml" />
+		<include file="com/epmis/jt/clientinfo/conf/struts-clientinfo.xml" />
+		<include file="com/epmis/jt/waymoney/conf/struts-waymoney.xml" />
+  		<include file="com/epmis/jt/repwill/conf/struts-repwill.xml" />
+  		<include file="com/epmis/jt/commresults/conf/struts-commresults.xml" />
+		<include file="com/epmis/jt/help/conf/struts-help.xml" /> 
+		<include file="com/epmis/jt/lender/conf/struts-lender.xml" /> 
+		<include file="com/epmis/jt/raiders/conf/struts-raiders.xml" /> 
+		<include file="com/epmis/jt/purpose/conf/struts-purpose.xml" /> 
+		<include file="com/epmis/jt/orderinfo/conf/struts-orderinfo.xml" /> 
+		<include file="com/epmis/jt/batchtransfe/conf/struts-batchtransfe.xml" /> 
+		<include file="com/epmis/jt/crecord/conf/struts-crecord.xml" /> 
+		<include file="com/epmis/jt/bankname/conf/struts-bankname.xml" /> 
+		<include file="com/epmis/jt/contract/conf/struts-contract.xml" />
+		<include file="com/epmis/edition/conf/struts-edition.xml" />
+</struts>
+

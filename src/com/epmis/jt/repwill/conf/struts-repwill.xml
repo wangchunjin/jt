@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="trepwill" namespace="/repwill/trepwill" extends="default">		
+	<action name="findAllRepwill" class="com.epmis.jt.repwill.web.RepwillAction" method="findAllRepwill">			
+		</action>
+		<action name="save" class="com.epmis.jt.repwill.web.RepwillAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.jt.repwill.web.RepwillAction" method="findById">
+			<result name="success">
+				/web/JT/REPWILL/update.jsp
+			</result>				
+		</action>
+		<action name="delete" class="com.epmis.jt.repwill.web.RepwillAction" method="delete">		
+		</action>
+		<action name="update" class="com.epmis.jt.repwill.web.RepwillAction" method="update">		
+		</action>
+		
+		
+		
+
+	
+	
+	</package>
+</struts>

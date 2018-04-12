@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="tabout" namespace="/about/tabout" extends="default">
+		<action name="findAllAbout" class="com.epmis.about.web.AboutAction" method="findAllAbout">			
+		</action>
+		<action name="delete" class="com.epmis.about.web.AboutAction" method="delete">			
+		</action>		
+		<action name="save" class="com.epmis.about.web.AboutAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.about.web.AboutAction" method="findById">
+			<result name="success">
+				/web/ABOUTTS/ABOUT/update.jsp
+			</result>
+		</action>
+		<action name="update" class="com.epmis.about.web.AboutAction" method="update">		
+		</action>
+		
+		
+		
+		
+
+	
+	
+	</package>
+</struts>

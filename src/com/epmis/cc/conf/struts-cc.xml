@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd"><struts>
+	<package name="sm_test" extends="default" namespace="/cc/sm_test">
+			 <action name="ShowSmTestTree" class="com.epmis.cc.web.SmTestAction" method="ShowSmTestTree">
+		     </action>
+		     <action name="ShowSmTestMoveTree" class="com.epmis.cc.web.SmTestAction" method="ShowSmTestMoveTree">
+		     </action>
+		     <action name="MoveSmTest" class="com.epmis.cc.web.SmTestAction" method="MoveSmTest">
+		     </action>
+		      <action name="addPlanUserTable" class="com.epmis.cc.web.SmTestAction" method="addPlanUserTable">
+		     </action>
+		     <action name="AddPlan" class="com.epmis.cc.web.SmTestAction" method="AddPlan">
+		     </action>	 
+		    <action name="label" class="com.epmis.cc.web.SmTestAction" method="GetLabel">
+		         <result name="success">
+				      /web/CC/SM_TEST/label.jsp
+			     </result>
+		     </action>
+		     <action name="label_assgin">
+		         <result name="success">
+				      /web/CC/SM_TEST/label_assgin.jsp
+			     </result>
+		     </action>
+		     <action name="label_remark" class="com.epmis.cc.web.SmTestAction" method="GetLabel">
+		         <result name="success">
+				      /web/CC/SM_TEST/label_remark.jsp
+			     </result>
+		     </action> 
+		     
+		      <action name="label_task_guid" class="com.epmis.cc.web.SmTestAction" method="GetLabel">
+		      	 <result name="success">
+				      /web/CC/SM_TEST/label_task_guid.jsp
+			     </result>
+		     </action>
+		      <action name="label_task" class="com.epmis.cc.web.SmTestAction" method="GetLabel">
+		      	 <result name="success">
+				      /web/CC/SM_TEST/label_task.jsp
+			     </result>
+		     </action>
+		     <action name="label_task_doc">
+		      	 <result name="success">
+				      /web/CC/SM_TEST/label_task_doc.jsp
+			     </result>
+		     </action>
+		      <action name="label_task_linkdoc">
+		      	 <result name="success">
+				      /web/CC/SM_TEST/label_task_linkdoc.jsp
+			     </result>
+		     </action>
+		      <action name="tabel_task_refdata">
+		      	 <result name="success">
+				      /web/CC/SM_TEST/tabel_task_refdata.jsp
+			     </result>
+		     </action>
+		     <action name="label_task_remark" class="com.epmis.cc.web.SmTestAction" method="GetLabel">
+		      	 <result name="success">
+				      /web/CC/SM_TEST/label_task_remark.jsp
+			     </result>
+		     </action>
+		     <action name="UpdateSmTestWbs" class="com.epmis.cc.web.SmTestAction" method="UpdateSmTestWbs">
+		    	<result name="info">
+				       /web/CC/SM_TEST/label.jsp
+			     </result>
+			     <result name="remark">
+				      /web/CC/SM_TEST/label_remark.jsp
+			     </result>
+		     </action>
+		     <action name="UpdateAssGuides" class="com.epmis.cc.web.SmTestAction" method="UpdateAssGuides">
+		     </action>
+		     <action name="cancleFinish" class="com.epmis.cc.web.SmTestAction" method="cancleFinish">
+		     </action>
+		     <action name="UpdateSmTestTask" class="com.epmis.cc.web.SmTestAction" method="UpdateSmTestTask">
+		     </action>
+	</package>
+	<package name="portal" extends="default" namespace="/cc/portal">
+		<action name="queryUserLayout" class="com.epmis.cc.web.SmTestAction" method="queryUserLayout">
+		</action>
+		<action name="updateUserPos" class="com.epmis.cc.web.SmTestAction" method="updateUserPos">
+		</action>
+		<action name="updateUserWidths" class="com.epmis.cc.web.SmTestAction" method="updateUserWidths">
+		</action>
+		<action name="selPortalet">
+      		<result name="success">
+	              /web/SYS/FIRST/selPortalet.jsp
+	        </result>		 
+	    </action>
+	    <action name="userPortalet" class="com.epmis.cc.web.SmTestAction" method="userPortalet">
+      		<result name="success">
+	              /web/SYS/FIRST/selPortalet.jsp
+	        </result>		 
+	    </action>
+	    <action name="userSelPortalet" class="com.epmis.cc.web.SmTestAction" method="userSelPortalet">
+		</action>
+		<action name="selPortaletEnt">
+      		<result name="success">
+	              /web/SYS/FIRST_ENT/selPortalet.jsp
+	        </result>		 
+	    </action>
+		<action name="userPortaletEnt" class="com.epmis.cc.web.SmTestAction" method="userPortalet">
+      		<result name="success">
+	              /web/SYS/FIRST_ENT/selPortalet.jsp
+	        </result>		 
+	    </action>
+	</package>
+	<package name="cc_user" extends="default" namespace="/cc/user">
+		<action name="portal" >
+      		<result name="success">
+	              /web/SYS/USER/PORTAL/content.jsp
+	        </result>		 
+	    </action>
+		<action name="portaletTable" class="com.epmis.cc.web.SmTestAction" method="portaletTable">
+		</action>
+		 
+		 <action name="updateUserPortalet" class="com.epmis.cc.web.SmTestAction" method="updateUserPortalet">
+	     </action>
+	     
+	     <action name="userClosePortalet" class="com.epmis.cc.web.SmTestAction" method="userClosePortalet">
+	     </action>
+    </package>
+	<package name="cc_rol" extends="default" namespace="/cc/role">
+		<action name="portal" >
+      		<result name="success">
+	              /web/SYS/ROLE/PORTAL/content.jsp
+	        </result>		 
+	     </action>
+	     
+	     <action name="portaletRoleTable" class="com.epmis.cc.web.SmTestAction" method="portaletRoleTable">
+		 </action>
+		 
+		 <action name="updateRolePortalet" class="com.epmis.cc.web.SmTestAction" method="updateRolePortalet">
+	     </action>
+    </package>
+    
+    <package name="dataDict" extends="default" namespace="/data">
+	     <action name="dict" class="com.epmis.cc.web.SmTestAction" method="dataTable">
+	     	<result name="success">
+	              /web/data.jsp
+	        </result>	
+	     </action>
+    </package>
+</struts>

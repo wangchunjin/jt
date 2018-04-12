@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="profile" extends="default" namespace="/sys/profile">		 
+		     <action name="SysProfileTable" class="com.epmis.sys.web.ProfileAction" method="SysProfileTable">
+		     </action>	 
+		     <action name="label" class="com.epmis.sys.web.ProfileAction" method="GetProfileInfo">
+		        <result name="success">
+		              /web/SYS/PROFILE/label.jsp
+		        </result>
+		     </action>
+		      <action name="label_list">
+		        <result name="success">
+		              /web/SYS/PROFILE/label_list.jsp
+		        </result>
+		     </action>
+		     <action name="label_user">
+		        <result name="success">
+		              /web/SYS/PROFILE/USER/label.jsp
+		        </result>
+		     </action>
+		     <action name="AddProfile" class="com.epmis.sys.web.ProfileAction" method="AddProfile">
+		     </action>	
+		      <action name="CopyProfile" class="com.epmis.sys.web.ProfileAction" method="CopyProfile">
+		     </action>
+		     <action name="DelProfile" class="com.epmis.sys.web.ProfileAction" method="DelProfile">
+		     </action>
+		     <action name="UpdateProfile" class="com.epmis.sys.web.ProfileAction" method="UpdateProfile">
+		     </action>
+		     <action name="DatactrListTable" class="com.epmis.sys.web.ProfileAction" method="DatactrListTable">
+		     </action>
+		     <action name="DeleteProfctr" class="com.epmis.sys.web.ProfileAction" method="DeleteProfctr">
+		     </action>
+		     <action name="InsertProfctr" class="com.epmis.sys.web.ProfileAction" method="InsertProfctr">
+		     </action>
+		     <action name="ProfileUserTable" class="com.epmis.sys.web.ProfileAction" method="ProfileUserTable">
+		     </action>
+		     <action name="AddUserTable" class="com.epmis.sys.web.ProfileAction" method="AddUserTable">
+		     </action>
+		     <action name="AddProfileUser" class="com.epmis.sys.web.ProfileAction" method="AddProfileUser">
+		     </action>
+		     <action name="DelProfileUser" class="com.epmis.sys.web.ProfileAction" method="DelProfileUser">
+		     </action>
+	    </package>
+</struts>

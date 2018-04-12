@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="sys_region" extends="default" namespace="/sys/sys_region">
+		<action name="regionTree" class="com.epmis.sys.region.web.SysRegionAction" method="regionTree"></action>
+		<action name="save" class="com.epmis.sys.region.web.SysRegionAction" method="save"></action>
+		<!-- 常用标签 -->	
+		<action name="label" class="com.epmis.sys.region.web.SysRegionAction" method="getInfoById">
+			<result name="success">
+				/web/SYS/COUNTRY/label.jsp
+			</result>
+		</action>
+		<action name="findById" class="com.epmis.sys.region.web.SysRegionAction" method="findById">
+			<result name="success">
+				/web/SYS/COUNTRY/around.jsp
+			</result>
+		</action>
+		<action name="updatezb" class="com.epmis.sys.region.web.SysRegionAction" method="updatezb"></action>
+		<action name="update" class="com.epmis.sys.region.web.SysRegionAction" method="update"></action>
+		<action name="delete" class="com.epmis.sys.region.web.SysRegionAction" method="delete"></action>
+		<action name="deletezb" class="com.epmis.sys.region.web.SysRegionAction" method="deletezb"></action>
+	</package>
+</struts>

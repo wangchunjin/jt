@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="tuser" namespace="/user/tuser" extends="default">
+		<action name="findAllUser" class="com.epmis.user.web.UserAction" method="findAllUser">			
+		</action>
+		<action name="delete" class="com.epmis.user.web.UserAction" method="delete">			
+		</action>
+		<action name="save" class="com.epmis.user.web.UserAction" method="save">
+		</action>
+		<action name="findById" class="com.epmis.user.web.UserAction" method="findById">
+			<result name="success">
+				/web/CUSER/USER/update.jsp
+			</result>		
+		</action>
+		<action name="update" class="com.epmis.user.web.UserAction" method="update">		
+		</action>
+		<action name="findCount" class="com.epmis.user.web.UserAction" method="findCount">
+				<result name="success">
+				/web/CUSER/USER/register.jsp
+<!-- 				/WEB-INF/pages/common/index.jsp -->
+			</result>		
+		</action>
+		<!-- 找到单个姓名认证的用户 -->
+		<action name="findByIdName" class="com.epmis.user.web.UserAction" method="findByIdName">
+			<result name="success">
+				/web/CUSER/USER/rzname.jsp
+			</result>		
+		</action>
+		
+		<!-- 姓名认证 -->
+		<action name="updateName" class="com.epmis.user.web.UserAction" method="updateName">			
+		</action>
+		
+		<!-- 找到单个银行卡号认证的用户 -->
+		<action name="findByIdYhkh" class="com.epmis.user.web.UserAction" method="findByIdYhkh">
+			<result name="success">
+				/web/CUSER/USER/rzyhkh.jsp
+			</result>			
+		</action>
+		
+		<!-- 银行卡号认证 -->
+		<action name="updateYhkh" class="com.epmis.user.web.UserAction" method="updateYhkh">			
+		</action>
+		
+
+		<!-- 设置金牌的内外顾问 -->
+		<action name="gw" class="com.epmis.user.web.UserAction" method="gw">			
+		</action>
+		
+		<!-- 对金牌顾问进行认证 -->
+		<action name="findByIdrz" class="com.epmis.user.web.UserAction" method="findByIdrz">			
+			<result name="success">
+				/web/CUSER/JPSH/rz.jsp
+			</result>	
+		
+		</action>
+		
+		<!-- 金牌顾问认证 -->
+		<action name="updaterz" class="com.epmis.user.web.UserAction" method="updaterz">			
+		</action>
+	<!-- 查询今天注册的用户 -->
+		<action name="showNewUsers" class="com.epmis.user.web.UserAction" method="showNewUsers">			
+		</action>
+	
+	</package>
+</struts>

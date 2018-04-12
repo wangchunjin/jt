@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="tedition" namespace="/edition/tedition" extends="default">
+	<action name="findAllEdition" class="com.epmis.edition.web.EditionAction" method="findAllEdition">			
+		</action>
+		<action name="delete" class="com.epmis.edition.web.EditionAction" method="delete">			
+		</action>
+		<action name="save" class="com.epmis.edition.web.EditionAction" method="save">		
+		</action>
+		
+		<action name="findById" class="com.epmis.edition.web.EditionAction" method="findById">
+			<result name="success">
+				/web/EDITION/update.jsp
+			</result>	
+				
+		</action>
+		<action name="update" class="com.epmis.edition.web.EditionAction" method="update">		
+			
+		</action>
+
+	
+	
+	</package>
+</struts>

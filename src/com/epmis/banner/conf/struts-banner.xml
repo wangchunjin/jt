@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="tbanner" namespace="/banner/tbanner" extends="default">
+		<action name="findAllBanner" class="com.epmis.banner.web.BannerAction" method="findAllBanner">			
+		</action>
+		<action name="delete" class="com.epmis.banner.web.BannerAction" method="delete">			
+		</action>
+		<action name="deletez" class="com.epmis.banner.web.BannerAction" method="deletez">			
+		</action>
+		<action name="save" class="com.epmis.banner.web.BannerAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.banner.web.BannerAction" method="findById">
+			<result name="success">
+				/web/LOUPAN/BANNER/update.jsp
+			</result>	
+			<result name="look">
+				/web/LOUPAN/BANNER/look.jsp
+			</result>		
+		</action>
+		<action name="update" class="com.epmis.banner.web.BannerAction" method="update">		
+		</action>
+		
+		<!--位置 -->
+		<action name="wz" class="com.epmis.banner.web.BannerAction" method="wz">		
+		</action>
+		
+		
+		
+
+	
+	
+	</package>
+</struts>

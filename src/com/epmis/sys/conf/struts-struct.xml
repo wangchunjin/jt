@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="struct" extends="default" namespace="/sys/struct">
+			 <action name="StructTable" class="com.epmis.sys.web.StructAction" method="StructTable">
+		     </action>
+		     <action name="AddStruct" class="com.epmis.sys.web.StructAction" method="AddStruct">
+		     </action>
+			 <action name="label_version">
+		         <result name="success">
+				      /web/SYS/STRUCT/label_version.jsp
+			     </result>
+		     </action>
+		      <action name="StructVersionTable" class="com.epmis.sys.web.StructAction" method="StructVersionTable">
+		     </action>
+		     <action name="label" class="com.epmis.sys.web.StructAction" method="GetLabel">
+		         <result name="success">
+				      /web/SYS/STRUCT/label.jsp
+			     </result>
+		     </action>
+		     <action name="UpdateStruct" class="com.epmis.sys.web.StructAction" method="UpdateStruct">
+		     </action>
+		     <action name="DelStruct" class="com.epmis.sys.web.StructAction" method="DelStruct">
+		     </action>
+		     <action name="saveDoc" class="com.epmis.sys.web.StructAction" method="saveDoc">
+		     </action>
+		     <action name="LinkStructTable" class="com.epmis.sys.web.StructAction" method="LinkStructTable">
+		     </action>
+		     <action name="AddLinkStructTable" class="com.epmis.sys.web.StructAction" method="AddLinkStructTable">
+		     </action>
+		     <action name="AddLinkStruct" class="com.epmis.sys.web.StructAction" method="AddLinkStruct">
+		     </action>
+		     <action name="DelLinkStruct" class="com.epmis.sys.web.StructAction" method="DelLinkStruct">
+		     </action>
+		     <action name="CreateDoc" class="com.epmis.sys.web.StructAction" method="CreateDoc">
+		     </action>
+		     <action name="updateStructDoc" class="com.epmis.sys.web.StructAction" method="updateStructDoc">
+				 <result name="success">
+				       /web/SYS/STRUCT/update.jsp
+			     </result>
+			     <result name="error">
+				      /web/KM/KM_UPLOAD/viewError.jsp
+			     </result>
+		     </action>
+		     <action name="OfficetplKeyInfo" class="com.epmis.sys.web.StructAction" method="OfficetplKeyInfo">
+		     </action>
+		     <action name="addLanguage" class="com.epmis.sys.web.StructAction" method="addLanguage"></action>
+		     <action name="deleteLanguage" class="com.epmis.sys.web.StructAction" method="deleteLanguage"></action>
+		      <action name="deleteOwnLanguage" class="com.epmis.sys.web.StructAction" method="deleteOwnLanguage"></action> 
+		     <action name="lableLanguage" class="com.epmis.sys.web.StructAction" method="lableLanguage">
+		         <result name="success">  
+				      /web/SYS/STRUCT/LANGUAGE/label.jsp
+			     </result>
+		     </action>
+		     <action name="lableOwnLanguage" class="com.epmis.sys.web.StructAction" method="lableLanguage">
+		         <result name="success">  
+				      /web/SYS/STRUCT/KM_LINK/LANGUAGE/label.jsp
+			     </result>
+		     </action>
+		     <action name="updateLanguage" class="com.epmis.sys.web.StructAction" method="updateLanguage"></action>
+		     <action name="showLanguageTree" class="com.epmis.sys.web.StructAction" method="showLanguageTree"></action>
+		     <action name="showOwnLanguageTree" class="com.epmis.sys.web.StructAction" method="showOwnLanguageTree"></action>		     
+	</package>
+</struts>

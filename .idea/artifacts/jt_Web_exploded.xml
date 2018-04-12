@@ -1,0 +1,150 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jt:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/jt_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="jt/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jt" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="activation.jar" module-name="jt" />
+          <element id="library" level="module" name="ant.jar" module-name="jt" />
+          <element id="library" level="module" name="antlr-2.7.7.jar" module-name="jt" />
+          <element id="library" level="module" name="aopalliance-1.0.jar" module-name="jt" />
+          <element id="library" level="module" name="asm-3.3.jar" module-name="jt" />
+          <element id="library" level="module" name="asm-commons-3.3.jar" module-name="jt" />
+          <element id="library" level="module" name="aspectjweaver-1.6.6.jar" module-name="jt" />
+          <element id="library" level="module" name="bcprov-jdk15-1.43.jar" module-name="jt" />
+          <element id="library" level="module" name="bsh-2.0b4.jar" module-name="jt" />
+          <element id="library" level="module" name="cdi-api-1.0.jar" module-name="jt" />
+          <element id="library" level="module" name="cglib-nodep-2.2.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-beanutils-1.8.2.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-dbcp.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-httpclient-3.0.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-lang-2.4.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-lang3-3.1.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-pool-1.4.jar" module-name="jt" />
+          <element id="library" level="module" name="core-2.2.jar" module-name="jt" />
+          <element id="library" level="module" name="discuz-ucenter-api-for-java--1374045102000.jar" module-name="jt" />
+          <element id="library" level="module" name="dom4j-1.6.1.jar" module-name="jt" />
+          <element id="library" level="module" name="dwr-2.0.1.jar" module-name="jt" />
+          <element id="library" level="module" name="ehcache-core-2.4.3.jar" module-name="jt" />
+          <element id="library" level="module" name="ezmorph-1.0.6.jar" module-name="jt" />
+          <element id="library" level="module" name="fckeditor-java-core-2.6.jar" module-name="jt" />
+          <element id="library" level="module" name="Filters.jar" module-name="jt" />
+          <element id="library" level="module" name="freemarker-2.3.16.jar" module-name="jt" />
+          <element id="library" level="module" name="gene4.0.11120.jar" module-name="jt" />
+          <element id="library" level="module" name="gson-1.7.1.jar" module-name="jt" />
+          <element id="library" level="module" name="hibernate-commons-annotations-4.0.2.Final.jar" module-name="jt" />
+          <element id="library" level="module" name="hibernate-core-4.2.7.SP1.jar" module-name="jt" />
+          <element id="library" level="module" name="hibernate-ehcache-4.2.7.SP1.jar" module-name="jt" />
+          <element id="library" level="module" name="hibernate-jpa-2.0-api-1.0.1.Final.jar" module-name="jt" />
+          <element id="library" level="module" name="hibernate-validator-5.0.1.Final.jar" module-name="jt" />
+          <element id="library" level="module" name="htmllexer.jar" module-name="jt" />
+          <element id="library" level="module" name="htmlparser.jar" module-name="jt" />
+          <element id="library" level="module" name="httpclient-4.2.jar" module-name="jt" />
+          <element id="library" level="module" name="httpcore-4.2.jar" module-name="jt" />
+          <element id="library" level="module" name="ibatis-2.3.4.726.jar" module-name="jt" />
+          <element id="library" level="module" name="IKAnalyzer2012FF_u1.jar" module-name="jt" />
+          <element id="library" level="module" name="iText-2.1.3.jar" module-name="jt" />
+          <element id="library" level="module" name="iTextAsian.jar" module-name="jt" />
+          <element id="library" level="module" name="jackson-core-asl-1.9.9.jar" module-name="jt" />
+          <element id="library" level="module" name="jackson-mapper-asl-1.9.7.jar" module-name="jt" />
+          <element id="library" level="module" name="jakarta-oro-2.0.8.jar" module-name="jt" />
+          <element id="library" level="module" name="javassist-3.18.1-GA.jar" module-name="jt" />
+          <element id="library" level="module" name="jaxen-full.jar" module-name="jt" />
+          <element id="library" level="module" name="jaxen.jar" module-name="jt" />
+          <element id="library" level="module" name="jboss-logging-3.1.0.GA.jar" module-name="jt" />
+          <element id="library" level="module" name="jboss-transaction-api_1.1_spec-1.0.1.Final.jar" module-name="jt" />
+          <element id="library" level="module" name="jbpm-identity.jar" module-name="jt" />
+          <element id="library" level="module" name="jbpm-jpdl.jar" module-name="jt" />
+          <element id="library" level="module" name="jcr-1.0.jar" module-name="jt" />
+          <element id="library" level="module" name="jdom-1.0.jar" module-name="jt" />
+          <element id="library" level="module" name="json_simple-1.1.jar" module-name="jt" />
+          <element id="library" level="module" name="json-lib-2.3-jdk15.jar" module-name="jt" />
+          <element id="library" level="module" name="jsoup-1.6.3.jar" module-name="jt" />
+          <element id="library" level="module" name="jstl-1.2.jar" module-name="jt" />
+          <element id="library" level="module" name="jta-1.1.jar" module-name="jt" />
+          <element id="library" level="module" name="jxl.jar" module-name="jt" />
+          <element id="library" level="module" name="log4j-1.2.15.jar" module-name="jt" />
+          <element id="library" level="module" name="lucene-analyzers-common-4.5.0.jar" module-name="jt" />
+          <element id="library" level="module" name="lucene-core-4.5.0.jar" module-name="jt" />
+          <element id="library" level="module" name="lucene-demo-4.5.0.jar" module-name="jt" />
+          <element id="library" level="module" name="lucene-facet-4.5.0.jar" module-name="jt" />
+          <element id="library" level="module" name="lucene-highlighter-4.5.0.jar" module-name="jt" />
+          <element id="library" level="module" name="lucene-memory-4.5.0.jar" module-name="jt" />
+          <element id="library" level="module" name="lucene-queries-4.5.0.jar" module-name="jt" />
+          <element id="library" level="module" name="lucene-queryparser-4.5.0.jar" module-name="jt" />
+          <element id="library" level="module" name="mail.jar" module-name="jt" />
+          <element id="library" level="module" name="module4.0.11120.jar" module-name="jt" />
+          <element id="library" level="module" name="mpxj.jar" module-name="jt" />
+          <element id="library" level="module" name="mybatis-3.1.1.jar" module-name="jt" />
+          <element id="library" level="module" name="mysql-connector-java-5.1.10-bin.jar" module-name="jt" />
+          <element id="library" level="module" name="ognl-3.0.6.jar" module-name="jt" />
+          <element id="library" level="module" name="ojdbc14.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.aop-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.asm-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.beans-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.context-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.context.support-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.core-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.expression-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.jdbc-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.orm-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.transaction-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="org.springframework.web.struts-3.1.3.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="pinyin4j-1.1.0.jar" module-name="jt" />
+          <element id="library" level="module" name="poi-3.6.jar" module-name="jt" />
+          <element id="library" level="module" name="poi2.jar" module-name="jt" />
+          <element id="library" level="module" name="quartz-1.6.6.jar" module-name="jt" />
+          <element id="library" level="module" name="shiro-aspectj-1.2.1.jar" module-name="jt" />
+          <element id="library" level="module" name="shiro-core-1.2.0.jar" module-name="jt" />
+          <element id="library" level="module" name="shiro-spring-1.2.1.jar" module-name="jt" />
+          <element id="library" level="module" name="shiro-web-1.2.1.jar" module-name="jt" />
+          <element id="library" level="module" name="slf4j-api-1.5.10.jar" module-name="jt" />
+          <element id="library" level="module" name="slf4j-log4j12-1.5.10.jar" module-name="jt" />
+          <element id="library" level="module" name="smtp.jar" module-name="jt" />
+          <element id="library" level="module" name="spring-modules-jbpm31.jar" module-name="jt" />
+          <element id="library" level="module" name="spring-web-3.2.5.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="spring-webmvc-3.2.5.RELEASE.jar" module-name="jt" />
+          <element id="library" level="module" name="struts2-convention-plugin-2.3.16.jar" module-name="jt" />
+          <element id="library" level="module" name="struts2-core-2.3.16.jar" module-name="jt" />
+          <element id="library" level="module" name="struts2-json-plugin-2.1.8.jar" module-name="jt" />
+          <element id="library" level="module" name="struts2-spring-plugin-2.3.16.jar" module-name="jt" />
+          <element id="library" level="module" name="wsdl4j.jar" module-name="jt" />
+          <element id="library" level="module" name="wstx-asl-3.2.4.jar" module-name="jt" />
+          <element id="library" level="module" name="xfire-all-1.2.6.jar" module-name="jt" />
+          <element id="library" level="module" name="xml-apis-ext-1.3.04.jar" module-name="jt" />
+          <element id="library" level="module" name="xmlgraphics-commons-1.2.jar" module-name="jt" />
+          <element id="library" level="module" name="XmlSchema-1.4.2.jar" module-name="jt" />
+          <element id="library" level="module" name="xstream-1.2.1.jar" module-name="jt" />
+          <element id="library" level="module" name="xwork-core-2.3.16.jar" module-name="jt" />
+          <element id="library" level="module" name="bccs-api-3.0.1.jar" module-name="jt" />
+          <element id="library" level="module" name="json.jar" module-name="jt" />
+          <element id="library" level="module" name="ueditor-1.1.2.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-codec-1.9.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-fileupload-1.3.1.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-io-2.4.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-collections-3.2.1.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-digester-2.1.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-logging-1.1.1.jar" module-name="jt" />
+          <element id="library" level="module" name="groovy-all-2.0.1.jar" module-name="jt" />
+          <element id="library" level="module" name="jasperreports-5.6.0.jar" module-name="jt" />
+          <element id="library" level="module" name="struts2-jasperreports-plugin-2.3.24.1.jar" module-name="jt" />
+          <element id="library" level="module" name="BASE64Encoder.jar" module-name="jt" />
+          <element id="library" level="module" name="alipay-sdk-java20170615110434-source.jar" module-name="jt" />
+          <element id="library" level="module" name="alipay-sdk-java20170615110434.jar" module-name="jt" />
+          <element id="library" level="module" name="fastjson-1.1.31.jar" module-name="jt" />
+          <element id="library" level="module" name="gson-2.2.4.jar" module-name="jt" />
+          <element id="library" level="module" name="commons-logging-1.1.1-sources.jar" module-name="jt" />
+          <element id="library" level="module" name="jiguang-common-1.0.7.jar" module-name="jt" />
+          <element id="library" level="module" name="jpush-client-3.2.8.jar" module-name="jt" />
+          <element id="library" level="module" name="jpush-client-3.3.0.jar" module-name="jt" />
+          <element id="library" level="module" name="jpush-java-libraryV2.jar" module-name="jt" />
+          <element id="library" level="module" name="json-lib-2.4-jdk15.jar" module-name="jt" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

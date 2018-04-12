@@ -1,0 +1,996 @@
+html {
+	background: rgb(255, 255, 255); font-family: "Î¢ÈíÑÅºÚ","ËÎÌå",Geneva, Arial, Helvetica, sans-serif; font-size: 12px;
+}
+* {
+	margin: 0px; padding: 0px;
+}
+a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a:hover {
+	color: rgb(217, 92, 24); text-decoration: underline;
+}
+a img {
+	border: 0px currentColor; border-image: none;
+}
+iframe {
+	width: 100%; height: 1800px;
+}
+ul {
+	list-style: none; margin: 0px; padding: 0px; vertical-align: middle;
+}
+li {
+	list-style: none; margin: 0px; padding: 0px; vertical-align: middle;
+}
+p {
+	list-style: none; margin: 0px; padding: 0px; vertical-align: middle;
+}
+h1 {
+	list-style: none; margin: 0px; padding: 0px; vertical-align: middle;
+}
+h2 {
+	list-style: none; margin: 0px; padding: 0px; vertical-align: middle;
+}
+h1 {
+	padding: 20px; text-align: center; color: rgb(255, 0, 0); font-size: 16px;
+}
+h2 {
+	text-align: center; padding-bottom: 20px; font-size: 12px; font-weight: normal; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+h3 {
+	padding: 5px; text-align: center; font-size: 12px; font-weight: normal;
+}
+.fleft {
+	float: left; display: inline;
+}
+.fright {
+	float: right;
+}
+.myclear {
+	height: 0px; line-height: 0; clear: both; font-size: 0px; display: block;
+}
+.left {
+	float: left;
+}
+.right {
+	color: rgb(153, 153, 153); font-size: 12px; float: right;
+}
+.more {
+	color: rgb(74, 74, 74); font-size: 12px; font-weight: normal; float: right;
+}
+.content {
+	margin: 0px auto; width: 1000px; overflow: hidden;
+}
+.hidden {
+	display: none;
+}
+.top {
+	background: rgb(241, 250, 240); height: 30px; color: rgb(74, 74, 74); line-height: 30px; font-size: 12px; border-bottom-color: rgb(199, 227, 197); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.header .content {
+	padding: 10px 0px; height: 45px; border-bottom-color: rgb(42, 141, 0); border-bottom-width: 0px; border-bottom-style: solid;
+}
+.header .logo {
+	height: 45px;
+}
+.header .search {
+	margin: 7px; border: 1px solid rgb(221, 221, 221); border-image: none; width: 300px; height: 30px;
+}
+.header .search input {
+	padding: 5px; border: 0px currentColor; border-image: none; width: 200px; height: 20px; line-height: 20px;
+}
+.header .search div {
+	background: rgb(245, 251, 241); width: 80px; height: 30px; text-align: center; border-left-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; float: right;
+}
+.header .search img {
+	margin: 5px; height: 20px;
+}
+.nav {
+	background: url("../images/nav_bg.gif") repeat-x; margin: 0px auto; width: 1000px; height: 40px; line-height: 40px; font-size: 15px; border-bottom-color: rgb(26, 153, 14); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.nav a {
+	height: 40px; text-align: center; color: rgb(255, 255, 255); font-weight: bold; display: inline-block;
+}
+.nav .left a {
+	width: 100px; float: left;
+}
+.nav .left a:hover {
+	
+}
+.nav .left a.active {
+	border-bottom-color: rgb(246, 129, 6); border-bottom-width: 4px; border-bottom-style: solid;
+}
+.bottom {
+	background: url("../images/bottom_bg.gif") repeat-x; width: 100%; text-align: center; font-size: 12px;
+}
+.linkus {
+	background: url("../images/linkus.gif") no-repeat; width: 503px; height: 31px;
+}
+.linkus a {
+	color: rgb(104, 136, 1); line-height: 30px;
+}
+.news {
+	margin: 0px auto; width: 1000px; height: 280px;
+}
+.news .bar1 {
+	height: 34px; line-height: 34px; font-size: 14px; font-weight: bold; border-bottom-color: rgb(101, 179, 34); border-bottom-width: 0px; border-bottom-style: solid;
+}
+.news .bar1 a {
+	padding: 0px; width: 91px; height: 30px; text-align: center; color: rgb(184, 100, 0); display: inline-block; cursor: pointer;
+}
+.news .bar1 a.active {
+	background: url("../images/bar1.png"); color: rgb(184, 100, 0);
+}
+#mainFocus {
+	float: left; position: relative;
+}
+#mainFocus img {
+	padding: 3px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 455px; height: 260px; position: relative;
+}
+#NewsPic {
+	position: relative;
+}
+#NewsPic .Nav {
+	height: 13px; right: 10px; bottom: 8px; position: absolute;
+}
+#NewsPic .Nav span {
+	background: rgb(0, 0, 0); width: 24px; text-align: center; font-size: 12px; border-left-color: rgb(255, 255, 255); border-left-width: 1px; border-left-style: solid; float: right; display: block; cursor: pointer;
+}
+#NewsPic .Nav span.Normal {
+	background: rgb(0, 0, 0); color: rgb(255, 255, 255); opacity: 0.5;
+}
+#NewsPic .Nav span.Cur {
+	background: rgb(206, 6, 9); color: rgb(255, 255, 255);
+}
+.indexnewslist {
+	background: rgb(255, 255, 255); padding: 10px; font-size: 14px; border-top-color: rgb(198, 120, 27); border-top-width: 2px; border-top-style: solid; list-style-type: none;
+}
+.indexnewslist li {
+	height: 27px; line-height: 27px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.newslist {
+	padding: 5px; line-height: 28px; font-size: 14px; list-style-type: none;
+}
+.newslist li {
+	height: 28px; float: left; dislay: block;
+}
+.newslist li img {
+	margin: 0px 5px;
+}
+.newslist li .aqlist {
+	color: rgb(51, 51, 51); font-size: 14px; list-style-type: none;
+}
+.aqlist li {
+	padding: 5px 0px; line-height: 28px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.aqlist li a {
+	font-size: 14px;
+}
+.aqlist .ask {
+	padding: 0px 5px; color: rgb(249, 123, 0); font-weight: bold;
+}
+.aqlist .answer {
+	padding: 0px 5px; color: rgb(249, 108, 59); font-weight: bold;
+}
+.imgtextlist1 {
+	color: rgb(51, 51, 51); font-size: 14px; margin-top: 15px; list-style-type: none;
+}
+.imgtextlist1 li {
+	margin-bottom: 10px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: dashed; float: left;
+}
+.imgtextlist1 table {
+	text-align: left; font-size: 14px; float: left;
+}
+.imgtextlist1 td.text {
+	width: 150px; text-align: left;
+}
+.imgtextlist1 td img {
+	padding: 1px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 110px; height: 80px; margin-bottom: 10px; float: left;
+}
+.imgtextlist2 {
+	overflow: hidden; list-style-type: none;
+}
+.imgtextlist2 li {
+	border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.imgtextlist2 table {
+	width: 100%; text-align: left; font-size: 14px;
+}
+.imgtextlist2 td img {
+	padding: 1px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 150px; height: 90px; margin-bottom: 10px; float: left;
+}
+.imgtextlist2 td.text {
+	text-align: left; padding-left: 5px;
+}
+.imgtextlist2 .name {
+	text-align: left; color: rgb(51, 51, 51); line-height: 35px; font-size: 14px; font-weight: bold;
+}
+.imgtextlist2 .info {
+	text-align: left; color: rgb(85, 85, 85);
+}
+.imgtextlist2 .first .name {
+	color: rgb(248, 158, 64);
+}
+.imgtextlist3 {
+	list-style-type: none;
+}
+.imgtextlist3 li {
+	margin: 5px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.imgtextlist3 li img {
+	border: 2px solid rgb(255, 255, 255); border-image: none;
+}
+.imgtextlist3 table {
+	width: 100%;
+}
+.imgtextlist3 td {
+	padding: 0px 5px; text-align: left;
+}
+.imgtextlist3 td img {
+	width: 110px; height: 70px;
+}
+.imgtextlist3 .name a {
+	color: rgb(43, 140, 1); line-height: 25px; font-size: 14px; font-weight: bold; float: left;
+}
+.imgtextlist3 .info {
+	color: rgb(85, 85, 85); line-height: 20px; font-size: 12px; float: left;
+}
+.imgtextlist4 {
+	list-style-type: none;
+}
+.imgtextlist4 li {
+	border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.imgtextlist4 table {
+	width: 100%;
+}
+.imgtextlist4 td {
+	padding: 0px 3px;
+}
+.imgtextlist4 .name {
+	color: rgb(0, 146, 22); line-height: 25px; font-size: 12px; font-weight: bold;
+}
+.imgtextlist4 .info {
+	color: rgb(85, 85, 85); line-height: 20px; font-size: 12px;
+}
+.newstable {
+	background: rgb(255, 255, 255); margin: 0px; width: 99%; text-align: center; font-size: 12px; border-collapse: collapse;
+}
+.newstable td {
+	border: 1px dashed rgb(204, 204, 204); border-image: none; height: 30px; line-height: 30px;
+}
+.newstable th {
+	background: rgb(220, 247, 163); height: 30px; color: rgb(51, 51, 51); border-top-color: rgb(132, 175, 39); border-right-color: rgb(204, 204, 204); border-top-width: 2px; border-right-width: 1px; border-top-style: solid; border-right-style: dashed;
+}
+.newstable2 {
+	background: rgb(255, 255, 255); margin: 0px 0px 10px; width: 100%; text-align: center; font-size: 12px; border-collapse: collapse;
+}
+.newstable2 td {
+	border: 1px dashed rgb(204, 204, 204); border-image: none; height: 30px; line-height: 30px;
+}
+.newstable2 th {
+	background: rgb(200, 231, 251); height: 30px; color: rgb(51, 51, 51); border-top-color: rgb(44, 130, 185); border-right-color: rgb(204, 204, 204); border-top-width: 2px; border-right-width: 1px; border-top-style: solid; border-right-style: dashed;
+}
+.jdt {
+	margin: 5px auto; width: 1000px;
+}
+.hqtable {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 96%; text-align: center; font-size: 12px; border-collapse: collapse;
+}
+.hqtable td {
+	border: 1px solid rgb(187, 216, 191); border-image: none; height: 30px; line-height: 30px;
+}
+.hqtable th {
+	background: rgb(220, 247, 163); height: 30px; color: rgb(51, 51, 51); border-top-color: rgb(132, 175, 39); border-right-color: rgb(187, 216, 191); border-top-width: 2px; border-right-width: 1px; border-top-style: solid; border-right-style: solid;
+}
+.hqtable tr.color {
+	background: rgb(237, 243, 238);
+}
+.newsblock {
+	border: 0px solid rgb(221, 221, 221); border-image: none; overflow: hidden;
+}
+.newsblock .title {
+	border: 0px currentColor; border-image: none; height: 26px; color: rgb(51, 51, 51); line-height: 26px; clear: both; font-size: 15px; font-weight: bold;
+}
+.newsblock .title img {
+	padding-right: 4px;
+}
+.videolist {
+	overflow: hidden;
+}
+.videolist > img {
+	width: 38px; height: 125px;
+}
+.videolist > span > img {
+	margin: 5px;
+}
+.imglist {
+	padding: 6px; text-align: center; line-height: 25px; overflow: hidden; font-size: 14px;
+}
+.imglist img {
+	border: 2px solid rgb(255, 255, 255); border-image: none; width: 150px; height: 90px; margin-top: 10px;
+}
+.imglist2 {
+	padding: 15px 0px; line-height: 25px; overflow: hidden; font-size: 12px;
+}
+.imglist2 > div {
+	width: 160px; text-align: center; float: left;
+}
+.imglist2 img {
+	width: 130px; margin-left: 15px; display: block;
+}
+.imglist3 {
+	background: red; padding: 15px 0px; line-height: 25px; overflow: hidden; font-size: 12px;
+}
+.imglist3 > div {
+	text-align: center; float: left;
+}
+.imglist3 img {
+	width: 130px; margin-left: 15px; display: block;
+}
+.imglist4 {
+	padding: 0px; overflow: hidden; font-size: 14px; font-weight: bold;
+}
+.imglist4 a {
+	color: rgb(51, 102, 204);
+}
+.imglist4 > div {
+	text-align: center; float: left;
+}
+.imglist4 img {
+	padding-right: 10px; padding-bottom: 5px; display: block;
+}
+.imglist4 table {
+	width: 100%; line-height: 24px;
+}
+.imglist4 table td {
+	padding: 4px; text-align: left; color: rgb(51, 102, 204); font-size: 14px; vertical-align: middle;
+}
+.imglist4 table td.imgtitle {
+	width: 150px; height: 80px; text-align: center;
+}
+.imglist4 table td.imgtitle img {
+	width: 140px; height: 70px;
+}
+.imglist4 table td.tjtext {
+	width: 450px;
+}
+.imglist4 table td.tj2 {
+	text-align: center; float: right;
+}
+.imglist4 table td.tj2 img {
+	padding-top: 15px;
+}
+.imglist4 table td span {
+	color: rgb(102, 102, 102); font-size: 12px; font-weight: normal;
+}
+.imglist4 ul {
+	width: 98%; float: left;
+}
+.imglist4 ul li {
+	margin: 4px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.personlist {
+	margin: 10px 0px; line-height: 20px; overflow: hidden; font-size: 14px;
+}
+.personlist > div {
+	margin: 10px 0px; width: 95%; text-align: center; float: left;
+}
+.personlist img {
+	border: 2px solid rgb(255, 255, 255); border-image: none; width: 150px; height: 90px;
+}
+.bar2 {
+	margin: 10px 0px; height: 30px; line-height: 30px; font-size: 14px;
+}
+.bar2 a {
+	background: url("../images/tab2_2.gif"); width: 120px; height: 30px; text-align: center; float: left; display: inline-block;
+}
+.bar2 a.active {
+	background: url("../images/tab2.gif"); color: rgb(255, 255, 255); text-indent: 2em;
+}
+.pagelist {
+	background: rgb(255, 255, 255); border: 0px solid rgb(221, 221, 221); border-image: none; width: 100%; color: rgb(58, 94, 94); overflow: hidden;
+}
+.pages {
+	margin: 10px; width: 100%; overflow: hidden;
+}
+.title {
+	height: 40px; margin-bottom: 0px;
+}
+.title2 {
+	background: rgb(250, 250, 250); height: 32px; color: rgb(26, 152, 5); line-height: 32px; font-size: 15px; font-weight: bold; border-bottom-color: rgb(101, 179, 34); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.location {
+	margin: 6px 0px; height: 32px; color: rgb(102, 102, 102); line-height: 32px; font-size: 14px; font-weight: bold; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 0px; border-bottom-style: solid;
+}
+.location02 {
+	margin: 6px 0px 0px; height: 32px; line-height: 32px; font-size: 14px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.maincenter {
+	background: rgb(247, 246, 246); width: 1000px; height: 1480px;
+}
+.title2 img {
+	margin: 0px 5px; vertical-align: middle;
+}
+.location img {
+	margin: 0px 5px; vertical-align: middle;
+}
+.title3 {
+	height: 32px; color: rgb(26, 152, 5); line-height: 32px; font-size: 18px; font-weight: bold;
+}
+.title3 img {
+	margin: 0px 5px; vertical-align: middle;
+}
+.preview {
+	padding: 10px; height: 120px;
+}
+.previewtitle {
+	padding: 5px 0px; text-align: center; font-size: 16px; font-weight: bold;
+}
+.previewtitle a {
+	color: rgb(243, 140, 6);
+}
+.previewtext {
+	color: rgb(136, 136, 136); line-height: 20px; text-indent: 2em; font-size: 12px;
+}
+div.quotes {
+	margin: 3px; padding: 3px; text-align: left;
+}
+div.quotes a {
+	padding: 2px 5px; border: 1px solid rgb(221, 221, 221); color: rgb(170, 170, 170); text-decoration: none; margin-right: 2px;
+}
+div.quotes a:hover {
+	padding: 2px 5px; border: 1px solid rgb(160, 160, 160); margin-right: 2px;
+}
+div.quotes a:active {
+	padding: 2px 5px; border: 1px solid rgb(160, 160, 160); margin-right: 2px;
+}
+div.quotes span.current {
+	padding: 2px 5px; border: 1px solid rgb(224, 224, 224); color: rgb(170, 170, 170); font-weight: bold; margin-right: 2px; background-color: rgb(240, 240, 240);
+}
+div.quotes span.disabled {
+	padding: 2px 5px; border: 1px solid rgb(243, 243, 243); color: rgb(204, 204, 204); margin-right: 2px;
+}
+#mainContent {
+	overflow: hidden;
+}
+#mainContent > div > div {
+	width: 100%; margin-top: 6px; float: left;
+}
+#mainContent .left .newsblock {
+	width: 360px;
+}
+#mainContent .right .newsblock {
+	border: 0px currentColor; border-image: none;
+}
+#mainContent .right .newslist {
+	border: 0px solid rgb(221, 221, 221); border-image: none;
+}
+#mainContent .right .imglist {
+	border: 0px solid rgb(221, 221, 221); border-image: none;
+}
+#mainContent .right .personlist {
+	border: 0px solid rgb(221, 221, 221); border-image: none;
+}
+#mainContent .right .title {
+	background: url("../images/title_bg2.gif"); height: 36px; color: rgb(19, 130, 9); line-height: 36px;
+}
+#mainContent .right .title a {
+	color: rgb(153, 153, 153);
+}
+#agcnewsContent {
+	height: 780px;
+}
+#agcmarketContent {
+	height: 1150px;
+}
+#agcmarketContent .right .newsblock {
+	background: rgb(238, 238, 238); border: 0px currentColor; border-image: none;
+}
+#agcmarketContent .right .imglist {
+	border: 0px solid rgb(221, 221, 221); border-image: none;
+}
+#agcmarketContent .left .newsblock {
+	padding: 5px; width: 350px; float: left;
+}
+#agcmarketContent .bar2 {
+	float: left;
+}
+#agcmarketContent .right .title {
+	background: url("../images/title_bg2.gif"); height: 36px; color: rgb(19, 130, 9); line-height: 36px;
+}
+#agcmarketContent .right .title a {
+	color: rgb(153, 153, 153);
+}
+#moreSDInfo {
+	margin: 10px 0px; height: 30px; line-height: 30px;
+}
+#agctecContent {
+	height: 1100px;
+}
+#agctecContent .imglist2 > div {
+	width: 120px;
+}
+#agctecContent .imglist2 img {
+	width: 100px;
+}
+#agctecContent .bar2 {
+	float: left;
+}
+#moretecInfo {
+	margin: 10px 0px; height: 30px; line-height: 30px;
+}
+#agcexperienceContent {
+	height: 780px;
+}
+#agcexperienceContent .newslist {
+	color: rgb(56, 94, 95);
+}
+#agccountryContent {
+	height: 700px;
+}
+#agccountryContent table {
+	width: 100%;
+}
+#agccountryContent table td {
+	padding: 0px 10px; width: 33.33%;
+}
+#agccountryContent .newslist {
+	color: rgb(56, 94, 95);
+}
+#agccountryContent .title {
+	background: url("../images/title_bg3.gif"); border-width: 0px 0px 1px; border-style: none none solid; border-color: currentColor currentColor rgb(46, 176, 61); border-image: none; height: 33px; color: rgb(11, 135, 25); line-height: 36px; font-size: 14px; font-weight: bold;
+}
+#agctravelContent {
+	height: 1450px;
+}
+#agctravelContent .right .title {
+	background: url("../images/title_bg2.gif"); color: rgb(255, 255, 255);
+}
+#agctravelContent .right .title a {
+	color: rgb(255, 255, 255);
+}
+#agctravelContent02 {
+	height: auto;
+}
+#agctravelContent02 .right .title {
+	background: url("../images/title_bg2.gif"); color: rgb(255, 255, 255);
+}
+#agctravelContent02 .right .title a {
+	color: rgb(255, 255, 255);
+}
+#zSlider {
+	padding: 2px; border: 1px solid rgb(187, 223, 170); border-image: none; margin-top: 0px; margin-bottom: 10px;
+}
+#zSlider ul {
+	list-style: none; width: 100%;
+}
+li {
+	list-style: none; width: 100%;
+}
+#picshow img {
+	border: 0px currentColor; border-image: none;
+}
+#picshow {
+	position: relative;
+}
+#picshow {
+	width: 530px; height: 350px; overflow: hidden; float: left;
+}
+#picshow_img {
+	width: 530px; height: 350px; overflow: hidden; float: left;
+}
+#picshow_img li {
+	overflow: hidden; float: left; display: none;
+}
+#picshow_img li:first-child {
+	display: inherit;
+}
+#picshow_img img {
+	width: 526px; height: 350px;
+}
+#picshow_tx {
+	left: 0px; width: 526px; bottom: 0px; overflow: hidden; position: absolute;
+}
+#picshow_tx li {
+	background: url("../images/picshow_bg.png") bottom; height: 68px; color: rgb(255, 255, 255); line-height: 68px; display: none;
+}
+#picshow_tx li a {
+	color: rgb(255, 255, 255);
+}
+#picshow_tx li a:hover {
+	text-decoration: underline;
+}
+#picshow_tx li h3 {
+	margin: 13px 0px; text-align: left; font-size: 18px;
+}
+#picshow_tx li p {
+	height: 16px; color: rgb(204, 204, 204); line-height: 16px; overflow: hidden;
+}
+#select_btn {
+	width: 191px; height: 350px; color: rgb(17, 17, 17); float: left; display: inline; background-color: rgb(240, 240, 240);
+}
+#select_btn li {
+	padding: 10px 5px 0px; width: 181px; height: 77px; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid; cursor: pointer;
+}
+#select_btn li:hover {
+	background-color: rgb(255, 255, 255);
+}
+#select_btn li.current {
+	background-color: rgb(255, 255, 255);
+}
+#select_btn li.current:hover {
+	background-color: rgb(255, 255, 255);
+}
+#select_btn a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+#select_btn .select_text {
+	font: bold 14px/16px "Microsoft YaHei"; overflow: hidden; display: block; font-size-adjust: none; font-stretch: normal;
+}
+#select_btn .select_text:hover {
+	text-decoration: underline;
+}
+#select_btn .select_date {
+	height: 23px; line-height: 23px; overflow: hidden; display: block;
+}
+.imglist_horizontal {
+	height: 130px; overflow: hidden;
+}
+.imglist_horizontal .scrollPanel {
+	width: 800%;
+}
+.imglist_horizontal1 {
+	float: left;
+}
+.imglist_horizontal2 {
+	float: left;
+}
+.imglist_horizontal a {
+	height: 130px; text-align: center; line-height: 30px; padding-right: 25px; font-size: 14px; float: left; display: block; cursor: pointer;
+}
+.imglist_horizontal a span {
+	display: block;
+}
+.imglist_vertical {
+	height: 500px; overflow: hidden;
+}
+.imglist_vertical .scrollPanel {
+	height: 800%;
+}
+.imglist_vertical1 {
+	width: 260px; height: auto;
+}
+.imglist_vertical2 {
+	width: 260px; height: auto;
+}
+.imglist_vertical a {
+	text-align: center; line-height: 30px; padding-top: 10px; font-size: 14px; display: block; cursor: pointer;
+}
+.imglist_vertical a img {
+	border: 3px solid rgb(255, 255, 255); border-image: none; width: 150px; height: 90px;
+}
+.imglist_vertical a span {
+	display: block;
+}
+.maptar {
+	margin: 12px 0px 10px; width: 216px; height: 246px;
+}
+.leftmain {
+	margin: 0px auto; width: 730px;
+}
+.sz01 {
+	margin: 12px 10px; width: 345px; height: 451px; float: left;
+}
+.szinfo {
+	width: 340px; padding-left: 5px; position: relative;
+}
+.sztitle {
+	color: rgb(56, 56, 56); line-height: 26px; font-size: 14px; font-weight: bold; margin-top: 10px;
+}
+.szinfo p {
+	color: rgb(133, 133, 133); line-height: 24px; font-size: 14px;
+}
+.szmore a {
+	top: 122px; right: 0px; color: rgb(133, 133, 133); line-height: 24px; font-size: 14px; position: absolute;
+}
+.szmore a:hover {
+	color: rgb(102, 159, 8); text-decoration: underline;
+}
+.szline {
+	width: 730px; height: 1px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.pages01 {
+	padding: 8px; text-align: center; overflow: hidden; clear: both; font-size: 12px;
+}
+.pages01 a.PageLink:link {
+	background: rgb(255, 255, 255); padding: 4px 6px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left;
+}
+a.PageLink:visited {
+	background: rgb(255, 255, 255); padding: 4px 6px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left;
+}
+a.PageLink:active {
+	background: rgb(255, 255, 255); padding: 4px 6px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left;
+}
+.raw-block .block-title .pages a.PageLink:link {
+	background: rgb(255, 255, 255); padding: 4px 6px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left;
+}
+.raw-block .block-title a.PageLink:visited {
+	background: rgb(255, 255, 255); padding: 4px 6px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left;
+}
+.raw-block .block-title a.PageLink:active {
+	background: rgb(255, 255, 255); padding: 4px 6px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left;
+}
+.pages01 a.PageLink:hover {
+	background: rgb(102, 102, 204); padding: 4px 6px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(255, 255, 255); font-size: 12px; text-decoration: none;
+}
+.raw-block .block-title .pages a.PageLink:hover {
+	background: rgb(102, 102, 204); padding: 4px 6px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(255, 255, 255); font-size: 12px; text-decoration: none;
+}
+.pages01 a.PrevPage:link {
+	background-position: 5px -274px; padding: 4px 5px 4px 14px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+a.PrevPage:visited {
+	background-position: 5px -274px; padding: 4px 5px 4px 14px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+a.PrevPage:active {
+	background-position: 5px -274px; padding: 4px 5px 4px 14px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+.raw-block .block-title .pages a.PrevPage:link {
+	background-position: 5px -274px; padding: 4px 5px 4px 14px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+.raw-block .block-title a.PrevPage:visited {
+	background-position: 5px -274px; padding: 4px 5px 4px 14px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+.raw-block .block-title a.PrevPage:active {
+	background-position: 5px -274px; padding: 4px 5px 4px 14px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+.pages01 a.PrevPage:hover {
+	background-position: -5px -124px; padding: 4px 5px 4px 14px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(255, 255, 255); font-size: 12px; text-decoration: none; background-color: rgb(102, 102, 204);
+}
+.raw-block .block-title .pages01 a.PrevPage:hover {
+	background-position: -5px -124px; padding: 4px 5px 4px 14px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(255, 255, 255); font-size: 12px; text-decoration: none; background-color: rgb(102, 102, 204);
+}
+.pages01 a.NextPage:link {
+	background-position: 45px -234px; padding: 4px 14px 4px 5px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+a.NextPage:visited {
+	background-position: 45px -234px; padding: 4px 14px 4px 5px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+a.NextPage:active {
+	background-position: 45px -234px; padding: 4px 14px 4px 5px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+.raw-block .block-title .pages a.NextPage:link {
+	background-position: 45px -234px; padding: 4px 14px 4px 5px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+.raw-block .block-title a.NextPage:visited {
+	background-position: 45px -234px; padding: 4px 14px 4px 5px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+.raw-block .block-title a.NextPage:active {
+	background-position: 45px -234px; padding: 4px 14px 4px 5px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(102, 102, 204); line-height: 100%; font-size: 12px; font-weight: normal; text-decoration: none; margin-left: 2px; float: left; background-color: rgb(255, 255, 255);
+}
+.pages01 a.NextPage:hover {
+	background-position: 35px -84px; padding: 4px 14px 4px 5px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(255, 255, 255); font-size: 12px; text-decoration: none; background-color: rgb(102, 102, 204);
+}
+.raw-block .block-title .pages a.NextPage:hover {
+	background-position: 35px -84px; padding: 4px 14px 4px 5px; border: 1px solid rgb(203, 219, 229); border-image: none; color: rgb(255, 255, 255); font-size: 12px; text-decoration: none; background-color: rgb(102, 102, 204);
+}
+.pages01 span.pagesel {
+	background: rgb(102, 102, 204); padding: 2px 8px; color: rgb(255, 255, 255); font-weight: bold; margin-left: 2px; float: left;
+}
+.pages01 span.PageMore {
+	padding: 2px 8px; float: left;
+}
+.njlzysz {
+	margin: 10px auto 40px; width: 996px; height: auto; position: relative;
+}
+.zysztop {
+	background: url("../images/njltop.jpg") no-repeat; width: 996px; height: 26px;
+}
+.zyszcenter {
+	background: url("../images/njlcenter.jpg") repeat-y right; width: 996px; height: 880px;
+}
+.zyszcenter2 {
+	background: url("../images/njlcenter.jpg") repeat-y right; width: 996px; height: 390px;
+}
+.zyszcenter3 {
+	background: url("../images/njlcenter.jpg") repeat-y right; width: 996px; height: 800px;
+}
+.zyszdb {
+	background: url("../images/njldb.jpg") no-repeat right; height: 13px;
+}
+.zyszinfo {
+	width: 784px; color: rgb(82, 81, 81); line-height: 26px; text-indent: 28px; font-size: 14px; margin-right: 30px; float: right;
+}
+.zyszinfo2 {
+	background: url("../images/contactbg.jpg") no-repeat right; width: 820px; height: 394px; color: rgb(82, 81, 81); line-height: 26px; text-indent: 28px; font-size: 14px; margin-right: 1px; float: right;
+}
+.zyszinfo3 {
+	color: rgb(82, 81, 81); line-height: 26px; text-indent: 28px; font-size: 14px; margin-left: 140px;
+}
+.zyszleft {
+	left: 0px; top: 26px; width: 156px; position: absolute;
+}
+.zyszleft ul {
+	width: 156px;
+}
+.zyszleft ul li {
+	background: url("../images/yllibg.png") no-repeat 0px 0px; width: 156px; height: 48px; color: rgb(102, 102, 102); font-size: 14px; font-weight: bold; display: block;
+}
+.zyszleft ul li a {
+	padding: 0px 0px 0px 45px; width: 111px; height: 48px; color: rgb(102, 102, 102); line-height: 48px; display: inline-block;
+}
+.zyszleft ul li a:link {
+	text-decoration: none; display: block;
+}
+div.zyszleft ul li a:visited {
+	text-decoration: none; display: block;
+}
+.zyszleft ul li a:hover {
+	background: url("../images/yllibg.png") no-repeat 0px -48px; color: rgb(255, 255, 255); text-decoration: none; display: block;
+}
+div.zyszleft ul li a.myevelinow:link {
+	background: url("../images/yllibg.png") no-repeat 0px -48px; color: rgb(255, 255, 255); text-decoration: none; display: block;
+}
+div.zyszleft ul li a.myevelinow:visited {
+	background: url("../images/yllibg.png") no-repeat 0px -48px; color: rgb(255, 255, 255); text-decoration: none; display: block;
+}
+div.zyszleft ul li a.myevelinow:hover {
+	background: url("../images/yllibg.png") no-repeat 0px -48px; color: rgb(255, 255, 255); text-decoration: none; display: block;
+}
+.contact {
+	width: 380px; margin-top: 20px;
+}
+.contact p {
+	color: rgb(82, 81, 81); line-height: 36px; font-size: 14px; font-weight: bold;
+}
+.szjsbox {
+	margin: 0px 9px 10px 3px; width: 260px; height: 240px; display: block;
+}
+.szjsbg {
+	background: url("../images/szjs_bg.jpg") no-repeat left top; border: currentColor; border-image: none; width: 260px; height: 204px; display: inline-block; position: relative;
+}
+.szjsbg img {
+	left: 11px; top: 10px; position: absolute;
+}
+.sztitle {
+	color: rgb(114, 113, 113); font-size: 14px;
+}
+.sztitle a {
+	height: 22px; overflow: hidden; font-weight: bold; display: inline;
+}
+.sztitle a:link {
+	color: rgb(114, 113, 113); text-decoration: none;
+}
+div.sztitle a:visited {
+	color: rgb(114, 113, 113); text-decoration: none;
+}
+.sztitle a:hover {
+	color: rgb(130, 201, 13); text-decoration: none;
+}
+.text {
+	margin: 10px auto; width: 94%;
+}
+.text p {
+	color: rgb(51, 51, 51); line-height: 28px; text-indent: 28px; font-size: 14px;
+}
+.context {
+	font-weight: bold;
+}
+.context2 {
+	font-weight: bold; margin-left: 60px;
+}
+.context2 img {
+	vertical-align: middle;
+}
+.subnews {
+	width: 730px; overflow: hidden; font-size: 14px; float: left;
+}
+.zftitle {
+	background: url("../images/user.png") no-repeat 10px 5px rgb(248, 248, 248); width: 740px; height: 27px; color: rgb(51, 51, 51); line-height: 27px; padding-left: 30px; font-weight: bold; border-top-color: rgb(102, 159, 8); border-top-width: 1px; border-top-style: solid;
+}
+ul.list {
+	margin: 8px; width: 98%; padding-top: 5px; float: left; display: block;
+}
+ul.list li {
+	background: url("../images/listleft.png") no-repeat 10px 13px; width: 98%; color: rgb(51, 51, 51); line-height: 35px; padding-left: 26px; font-size: 14px; vertical-align: middle; float: left; display: block;
+}
+ul.list li span {
+	color: rgb(102, 102, 102); padding-right: 4px; float: right;
+}
+ul.list li a:link {
+	color: rgb(114, 113, 113); text-decoration: none;
+}
+ul.list li a:visited {
+	color: rgb(114, 113, 113); text-decoration: none;
+}
+ul.list li a:hover {
+	color: rgb(130, 201, 13); text-decoration: none;
+}
+.zffl {
+	width: 260px; height: auto; overflow: hidden; font-size: 14px; float: right;
+}
+.zffl .zfflinfo {
+	background: url("../images/zffltitle.jpg") no-repeat; width: 260px; height: 27px; color: rgb(255, 255, 255); line-height: 27px; padding-left: 20px; font-weight: bold;
+}
+.todayhq {
+	background: rgb(235, 155, 0); padding: 5px; text-align: center; color: rgb(255, 255, 255); font-size: 18px;
+}
+.todayhq span {
+	float: right;
+}
+.hqsearch {
+	padding: 5px; height: 40px; text-align: center; line-height: 40px;
+}
+.hqsearch input {
+	padding: 3px; border: 1px solid rgb(204, 204, 204); border-image: none; margin-right: 10px; margin-left: 5px;
+}
+.hqsearch input.sx {
+	background: rgb(7, 169, 30); border: currentColor; border-image: none; width: 40px; color: rgb(255, 255, 255);
+}
+.hqsearch select {
+	padding: 3px; border: 1px solid rgb(204, 204, 204); border-image: none; margin-right: 10px; margin-left: 5px;
+}
+.lbcx {
+	padding: 5px; color: rgb(206, 116, 0); font-size: 16px; font-weight: bold;
+}
+.lbsearch {
+	padding: 5px; height: 40px; text-align: center; line-height: 40px;
+}
+.lbsearch a {
+	background: rgb(248, 246, 225); margin: 5px; border: 1px solid rgb(202, 196, 129); border-image: none; color: rgb(224, 80, 1);
+}
+.lbsearch a:hover {
+	background: rgb(201, 115, 4); color: rgb(255, 255, 255);
+}
+.gylr {
+	margin: 0px auto; width: 100%; overflow: hidden;
+}
+.gylr .left {
+	margin: 10px; text-align: center; float: left;
+}
+.gylr .left img {
+	border: 3px solid rgb(204, 204, 204); border-image: none; width: 300px; height: 250px;
+}
+.gylr .right {
+	margin: 10px; color: rgb(51, 51, 51); line-height: 30px; font-size: 15px; float: left;
+}
+.gylr p {
+	margin: 1% auto 0px; width: 90%; line-height: 28px;
+}
+table.grzx_table {
+	margin: 15px auto 0px; padding: 10px; width: 90%; font-size: 14px;
+}
+table.grzx_table th {
+	padding: 5px; width: 120px; height: 30px; text-align: right; font-weight: normal;
+}
+table.grzx_table th span {
+	padding: 5px; color: rgb(255, 0, 0);
+}
+table.grzx_table td input {
+	padding: 3px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 160px; margin-right: 10px; margin-left: 5px;
+}
+table.grzx_table td select {
+	padding: 3px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 170px; margin-right: 10px; margin-left: 5px;
+}
+.listtab-vec {
+	width: 100%; height: 25px; line-height: 25px; margin-top: 10px; border-bottom-color: rgb(187, 223, 170); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.listtab-vec ul {
+	width: 100%; float: left;
+}
+.listtab-vec ul.cfix {
+	width: 95%; float: left;
+}
+.listtab-vec ul.fn-right {
+	width: 5%; text-align: right; float: right;
+}
+.listtab-vec ul.cfix li {
+	width: 60px; height: 25px; text-align: center; line-height: 25px; margin-right: 5px; float: left; display: block;
+}
+.listtab-vec ul.cfix li a {
+	background: rgb(240, 240, 240); display: block;
+}
+.listtab-vec ul.cfix li a.on {
+	background: rgb(51, 153, 0); color: rgb(255, 255, 255); display: block;
+}

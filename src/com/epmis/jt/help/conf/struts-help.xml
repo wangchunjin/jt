@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="thelp" namespace="/help/thelp" extends="default">		
+	<action name="findAllHelp" class="com.epmis.jt.help.web.HelpAction" method="findAllHelp">			
+		</action>
+		<action name="save" class="com.epmis.jt.help.web.HelpAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.jt.help.web.HelpAction" method="findById">
+			<result name="success">
+				/web/JT/HELP/update.jsp
+			</result>
+			<result name="look">
+				/web/JT/HELP/look.jsp
+			</result>					
+		</action>
+		<action name="delete" class="com.epmis.jt.help.web.HelpAction" method="delete">		
+		</action>
+		<action name="update" class="com.epmis.jt.help.web.HelpAction" method="update">		
+		</action>
+		
+		
+		
+
+	
+	
+	</package>
+</struts>

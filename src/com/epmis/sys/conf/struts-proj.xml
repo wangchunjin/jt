@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="eps" extends="default" namespace="/sys/eps">
+			 <action name="ShowEpsTree" class="com.epmis.sys.web.ProjAction" method="ShowEpsTree">
+		     </action>
+			 <action name="AddEps" class="com.epmis.sys.web.ProjAction" method="AddEps">
+		     </action>
+		      <action name="label" class="com.epmis.sys.web.ProjAction" method="GetLabel">
+		         <result name="success">
+				      /web/SYS/EPS/label.jsp
+			     </result>
+		     </action>
+		     <action name="UpdateEps" class="com.epmis.sys.web.ProjAction" method="UpdateEps">
+		     	<result name="success">
+				      /web/SYS/EPS/label.jsp
+			     </result>
+		     </action>
+		     <action name="AddEps" class="com.epmis.sys.web.ProjAction" method="AddEps">
+		     </action>
+		     <action name="DelEps" class="com.epmis.sys.web.ProjAction" method="DelEps">
+		     </action>
+		     <action name="MoveEps" class="com.epmis.sys.web.ProjAction" method="MoveEps">
+		     </action>
+	</package>
+	<package name="proj" extends="default" namespace="/sys/proj">
+	         <action name="CopyPlan" class="com.epmis.sys.web.ProjAction" method="CopyPlan">
+		     </action>
+			 <action name="MoveProj" class="com.epmis.sys.web.ProjAction" method="MoveProj">
+		     </action>
+			 <action name="CheckProjNum" class="com.epmis.sys.web.ProjAction" method="CheckProjNum">
+		     </action>
+		      <action name="ShowProjTree" class="com.epmis.sys.web.ProjAction" method="ShowProjTree">
+		     </action>
+		      <action name="ChangeProj" class="com.epmis.sys.web.ProjAction" method="ChangeProj">
+		     </action>
+		     <action name="AddProj" class="com.epmis.sys.web.ProjAction" method="AddProj">
+		     </action>
+		     <action name="ShowUserTable" class="com.epmis.sys.web.ProjAction" method="ShowUserTable">
+		     </action>
+		     <action name="AddUser" class="com.epmis.sys.web.ProjAction" method="AddUser">
+		     </action> 
+		     <action name="ModuleImport" class="com.epmis.sys.web.ProjAction" method="ModuleImport">
+		     </action>
+		     <action name="label" class="com.epmis.sys.web.ProjAction" method="labelInfo">
+		         <result name="success">
+				      /web/SYS/PROJ/label.jsp
+			     </result>
+		     </action>
+		     <action name="UpdateProjInfo" class="com.epmis.sys.web.ProjAction" method="UpdateProjInfo">
+		     	<result name="success">
+				      /web/SYS/PROJ/label.jsp
+			     </result>
+		     </action>
+		     <action name="labelInfoSuy" class="com.epmis.sys.web.ProjAction" method="labelInfoSuy">
+		         <result name="success">
+				      /web/SYS/PROJ/labelInfoSuy.jsp
+			     </result>
+		     </action>
+		     <action name="updateProjSuy" class="com.epmis.sys.web.ProjAction" method="updateProjSuy">
+		     	<result name="success">
+				      /web/SYS/PROJ/labelInfoSuy.jsp
+			     </result>
+		     </action>
+		     <action name="ProjCompany" class="com.epmis.sys.web.ProjAction" method="ProjCompany">
+			     	<result name="success">
+				      /web/SYS/PROJ/COMPANY/label_company.jsp
+			     </result>
+		     </action>
+		    <action name="ShowProjColumn" class="com.epmis.sys.web.ProjAction" method="ShowProjColumn">
+		     </action> 
+		      <action name="ProjCompanyTable" class="com.epmis.sys.web.ProjAction" method="ProjCompanyTable">
+		     </action> 
+		     <action name="AddVnmtTable" class="com.epmis.sys.web.ProjAction" method="AddVnmtTable">
+		     </action> 
+		     <action name="AddVnmt" class="com.epmis.sys.web.ProjAction" method="AddVnmt">
+		     </action> 
+		      <action name="delVnmt" class="com.epmis.sys.web.ProjAction" method="delVnmt">
+		     </action> 
+		     <action name="ProjTable" class="com.epmis.sys.web.ProjAction" method="ProjTable">
+		     </action> 
+		     <action name="ProjTreeProjectCattye" class="com.epmis.sys.web.ProjAction" method="ProjTreeProjectCattye">
+		     </action> 
+			     <action name="ProjTreeSupervisionCattye" class="com.epmis.sys.web.ProjAction" method="ProjTreeSupervisionCattye">
+		     </action>	  
+	        <action name="ProjTreeComprojCattye" class="com.epmis.sys.web.ProjAction" method="ProjTreeComprojCattye">
+		     </action>
+		     <action name="ProjTreeCattye" class="com.epmis.sys.web.ProjAction" method="ProjTreeCattye">
+		     </action>	
+			  <action name="labelPeople" class="com.epmis.sys.web.ProjAction" method="labelPeople">
+			  	<result name="success">
+				      /web/SYS/PROJ/PEOPLE/label_people.jsp
+			     </result>
+		     </action>		     
+		     <action name="ProjPeopleTable" class="com.epmis.sys.web.ProjAction" method="ProjPeopleTable">
+		     </action>	
+		        <action name="AddPeople" class="com.epmis.sys.web.ProjAction" method="AddPeople">
+		     </action>
+		     <action name="delPeople" class="com.epmis.sys.web.ProjAction" method="delPeople">
+		     </action>
+		     <action name="EditPeople" class="com.epmis.sys.web.ProjAction" method="EditPeople">
+		      	<result name="success">
+				      /web/SYS/PROJ/PEOPLE/EditPeople.jsp
+			     </result>
+		     </action>
+		      <action name="SavePeople" class="com.epmis.sys.web.ProjAction" method="SavePeople">
+		     </action>
+		      <action name="ProjCatval">
+		      		      	<result name="success">
+				      /web/SYS/PROJ/CATVAL/catval.jsp
+			     </result>
+		     </action>		
+		      <action name="ProjUser">
+		      		      	<result name="success">
+				      /web/SYS/PROJ/USER/label_user.jsp
+			     </result>
+		     </action>	
+		     <action name="ProjUserTable" class="com.epmis.sys.web.ProjAction" method="ProjUserTable">
+		     </action>  
+		     <action name="GetProfileType" class="com.epmis.sys.web.ProjAction" method="GetProfileType">
+		     </action>  
+		     <action name="SetProfileType" class="com.epmis.sys.web.ProjAction" method="SetProfileType">
+		     </action>		 
+		      <action name="AddUserTable" class="com.epmis.sys.web.ProjAction" method="AddUserTable">
+		     </action>		     
+		  	<action name="delUser" class="com.epmis.sys.web.ProjAction" method="delUser">
+		     </action>	 
+		     <action name="SetAllUser" class="com.epmis.sys.web.ProjAction" method="SetAllUser">
+		     </action>	       
+		     <action name="seeAssignTable" class="com.epmis.sys.web.ProjAction" method="seeAssignTable">
+		     </action>		     
+		     <action name="DelProj" class="com.epmis.sys.web.ProjAction" method="DelProj">
+		     </action>
+		     <action name="GetLocationByMark" class="com.epmis.sys.web.ProjAction" method="GetLocationByMark">
+		     </action>
+	         <action name="ShowProjEntByMap" class="com.epmis.sys.web.ProjAction" method="ShowProjEntByMap">
+		     </action>	   
+		     <action name="ShowProjByMap" class="com.epmis.sys.web.ProjAction" method="ShowProjByMap">
+		     </action>	  
+	</package>
+</struts>

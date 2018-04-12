@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="torderinfo" namespace="/orderinfo/torderinfo" extends="default">		
+	<action name="findAllOrderinfo" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="findAllOrderinfo">			
+		</action>
+		<action name="findAllOrderinfo_yg" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="findAllOrderinfo_yg">			
+		</action>
+		<action name="save" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="findById">
+			<result name="success">
+				/web/JT/ORDER/INFO/look.jsp
+			</result>				
+		</action>
+		<!-- 根据订单中的用户id查询该用户的通讯录的所有信息 -->
+		<action name="findById_lookt" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="findById_lookt">
+			<result name="success">
+				/web/JT/CUISHOU/YG/lookt.jsp
+			</result>				
+		</action>
+		<!-- 基本信息 -->
+		<action name="findById_lookt1" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="findById_lookt">
+			<result name="success">
+				/web/JT/CUISHOU/YG/SHOW/lookt.jsp
+			</result>				
+		</action>
+		<action name="findById_lookt2" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="findById_lookt">
+			<result name="success">
+				/web/JT/CUISHOU/YG/SHOW/looklx.jsp
+			</result>				
+		</action>
+		<action name="delete" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="delete">		
+		</action>
+		<action name="update" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="update">		
+		</action>
+		<!-- 消减滞纳金 -->
+		<action name="late" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="late">		
+		</action>
+		<!-- 催收主管分配选中订单 -->
+		<action name="fp" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="fp">		
+		</action>
+		<!-- 催收主管收回选中订单 -->
+		<action name="sh" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="sh">		
+		</action>
+		<!-- 催收机构分配选中订单 -->
+		<action name="fp_jg" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="fp_jg">		
+		</action>
+		<!-- 催收机构收回选中订单 -->
+		<action name="sh_jg" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="sh_jg">		
+		</action>
+		<!-- 对状态为1（还款中）的订单进行平帐 -->
+		<action name="flat_1" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="flat_1">		
+		</action>
+		<!-- 对状态为3（逾期）的订单进行平帐 -->
+		<action name="flat_2" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="flat_2">		
+		</action>
+		<!-- 对状态为1或3（逾期）的订单进行平帐 -->
+		<action name="flat_3" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="flat_3">		
+		</action>
+		
+		<!-- 催收主管 -->
+		<action name="rank" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="rank">		
+		</action>
+		
+		<!-- 机构排行 -->
+		<action name="Jgrankings" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="Jgrankings">		
+		</action>
+		
+		<!-- 机构成员排行 -->
+		<action name="Cyrankings" class="com.epmis.jt.orderinfo.web.OrderinfoAction" method="Cyrankings">		
+		</action>
+	
+	</package>
+</struts>

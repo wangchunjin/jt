@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-empty.xml"/>
+    <!-- 引入系统框架所用的iBatis配置文件 -->
+    <sqlMap resource="com/jshx/module/admin/conf/sql-map-code.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-dept.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-log.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-loginImage.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-module.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-permission.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-portal.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-quick.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-security.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-user.xml"/>
+	<sqlMap resource="com/jshx/module/admin/conf/sql-map-userrole.xml"/>	
+	
+	<sqlMap resource="com/jshx/module/form/conf/sql-map-form.xml"/>
+	<sqlMap resource="com/jshx/module/form/conf/sql-map-datebase.xml"/>
+	<sqlMap resource="com/jshx/module/form/conf/sql-map-formcategory.xml"/>
+	
+	<sqlMap resource="com/jshx/module/infomation/conf/sql-map-information.xml"/>
+	
+	<sqlMap resource="com/jshx/module/mobile/version/conf/sql-map-version.xml"/>
+	
+	<sqlMap resource="com/jshx/log/conf/sql-map-log.xml"/>
+	<sqlMap resource="com/jshx/log/conf/sql-map-behavior.xml"/>		
+</sqlMapConfig>

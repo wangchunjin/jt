@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="tprodt" namespace="/prodt/tprodt" extends="default">		
+	<action name="findAllProdt" class="com.epmis.dynamic.web.DynamicAction" method="findAllProdt">			
+		</action>
+		<action name="save" class="com.epmis.dynamic.web.DynamicAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.dynamic.web.DynamicAction" method="findById">
+			<result name="success">
+				/web/LOUPAN/LPDT/update.jsp
+			</result>				
+		</action>
+		<action name="delete" class="com.epmis.dynamic.web.DynamicAction" method="delete">		
+		</action>
+		<action name="update" class="com.epmis.dynamic.web.DynamicAction" method="update">		
+		</action>
+		
+		
+		
+
+	
+	
+	</package>
+</struts>

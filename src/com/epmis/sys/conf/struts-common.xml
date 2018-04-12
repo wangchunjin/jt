@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="common" extends="default" namespace="/">
+		<action name="userLogin"
+			class="com.epmis.sys.web.CommonAction"
+			method="userLogin">
+			<result name="success" type="redirect">/index.action</result>
+            <result name="input" type="redirect">/login.jsp</result>
+            <result name="wzc" type="redirect">/register.jsp</result>
+		</action>
+		<action name="login"
+			class="com.epmis.sys.web.CommonAction"
+			method="login">
+            <result name="success" >/welcome.jsp</result>
+		</action>	
+		
+		<action name="logout" class="com.epmis.sys.web.CommonAction" method="UserLogout">
+            <result name="success" type="redirect">/login.jsp</result>
+		</action>	
+		
+		<action name="ChangeUserInfo" class="com.epmis.sys.web.CommonAction"
+			method="ChangeUserInfo">
+           	<result name="success">
+				/WEB-INF/pages/common/ChangeUserInfo.jsp
+			</result>
+		</action>
+		<action name="SaveUserInfo"
+			class="com.epmis.sys.web.CommonAction"
+			method="SaveUserInfo">          
+		</action>	
+		<action name="loginPic">   
+		     <result name="success">
+				/WEB-INF/pages/common/changeLoginPic.jsp
+			</result>       
+		</action>	
+		<action name="saveLoginPic"
+			class="com.epmis.sys.web.CommonAction"
+			method="saveLoginPic">          
+		</action>			
+		<action name="GetRegister"
+			class="com.epmis.sys.web.CommonAction"
+			method="GetRegister">          
+		</action>	
+		<action name="Register"
+			class="com.epmis.sys.web.CommonAction"
+			method="Register">          
+		</action>	
+		<action name="ReadSystemPro"
+			class="com.epmis.sys.web.CommonAction"
+			method="ReadSystemPro">          
+		</action>
+		<action name="GetPassword"
+			class="com.epmis.sys.web.CommonAction"
+			method="GetPassword">          
+		</action>
+		<action name="index"
+			class="com.epmis.sys.web.CommonAction"
+			method="index">
+			<result name="success">
+				/WEB-INF/pages/common/index.jsp
+			</result>
+		</action>		
+		<action name="SearchByKeyWord">
+			<result name="success">
+				/WEB-INF/pages/common/SearchByKeyWord.jsp
+			</result>
+		</action>
+	<action name="OpBySql"
+			class="com.epmis.sys.web.CommonAction"
+			method="OpBySql">
+		</action>
+		<action name="GetGuid"
+			class="com.epmis.sys.web.CommonAction"
+			method="GetGuid">
+		</action>
+			<action name="OpSelectBySql"
+			class="com.epmis.sys.web.CommonAction"
+			method="OpSelectBySql">
+		</action>
+		<action name="log" class="com.epmis.sys.web.CommonAction"
+			method="log" >
+		</action>
+		<action name="DelLog" class="com.epmis.sys.web.CommonAction"
+			method="DelLog" >
+		</action>
+	</package>
+</struts>

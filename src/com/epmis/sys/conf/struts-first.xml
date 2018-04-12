@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="first" extends="default" namespace="/sys/first">		 
+		     <action name="GetMajor" class="com.epmis.sys.web.FirstAction" method="GetMajor">
+		     </action>	 
+		      <action name="GetProjectPic" class="com.epmis.sys.web.FirstAction" method="GetProjectPic">
+		         <result name="success">
+		              /web/SYS/FIRST/pic/ProjectPic.jsp
+		        </result>
+		     </action>	
+	    </package>
+</struts>

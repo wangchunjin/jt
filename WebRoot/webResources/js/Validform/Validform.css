@@ -1,0 +1,58 @@
+.Validform_checktip{
+	margin-left:8px;
+	line-height:20px;
+	height:20px;
+	overflow:hidden;
+	color:#999;
+	font-size:12px;
+}
+.Validform_right{
+	color:#71b83d;
+	padding-left:20px;
+	background:url('images/right.png') no-repeat left center;
+}
+.Validform_wrong{
+	color:red;
+	padding-left:20px;
+	white-space:nowrap;
+	background:url('images/error.png') no-repeat left center;
+}
+.Validform_loading{
+	padding-left:20px;
+	background:url('images/onLoad.gif') no-repeat left center;
+}
+.Validform_error{
+	background-color:#ffe7e7;
+}
+
+.validform_tip{
+	position:absolute;
+	border:1px solid #888;
+	background:#fff;
+	display:inline-block;
+	padding:0px;
+	margin:1em 0 0 -2em;
+}
+.validform_dec{
+	position:absolute;
+	width:1em;
+	height:0.5em;
+	left:0.5em;
+	top:-0.5em;
+	overflow:hidden;
+}
+.validform_dec s{
+	position:absolute;
+	width:1em;
+	height:1em;
+	
+	font-size:1em;
+	font-family:simsun;
+}
+.validform_dec .validform_dec1{
+	color:#888;
+}
+.validform_dec .validform_dec2{
+	color:#fff;
+	top:1px;
+}

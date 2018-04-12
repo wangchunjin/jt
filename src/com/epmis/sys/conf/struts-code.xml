@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="code" extends="default" namespace="/sys/code">		 
+		     <action name="SysCodeTable" class="com.epmis.sys.web.CodeAction" method="SysCodeTable">
+		     </action>	 
+		     <action name="label" class="com.epmis.sys.web.CodeAction" method="GetCodeInfo">
+		        <result name="success">
+		              /web/SYS/CODE/label.jsp
+		        </result>
+		     </action>
+		     <action name="AddCode" class="com.epmis.sys.web.CodeAction" method="AddCode">
+		     </action>	
+		     <action name="DelCode" class="com.epmis.sys.web.CodeAction" method="DelCode">
+		     </action>
+		     <action name="UpdateCode" class="com.epmis.sys.web.CodeAction" method="UpdateCode">
+		     </action>
+		     <action name="GetCodeJson" class="com.epmis.sys.web.CodeAction" method="GetCodeJson">
+		     </action>	
+	    </package>
+</struts>

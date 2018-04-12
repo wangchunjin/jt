@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="tsysm" namespace="/sysm/tsysm" extends="default">
+		<action name="findAllSysmcar" class="com.epmis.sysm.web.SysmAction" method="findAllSysmcar">			
+		</action>
+		<action name="delete" class="com.epmis.sysm.web.SysmAction" method="delete">			
+		</action>
+		<action name="save" class="com.epmis.sysm.web.SysmAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.sysm.web.SysmAction" method="findById">
+			<result name="success">
+				/web/JIGAUN/JIGUANCAR/FS.jsp
+			</result>		
+		</action>
+		<action name="update" class="com.epmis.sysm.web.SysmAction" method="update">		
+		</action>
+		
+
+	
+	
+	</package>
+</struts>

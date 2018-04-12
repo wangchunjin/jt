@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="traiders" namespace="/raiders/traiders" extends="default">
+		<action name="findAllRaiders" class="com.epmis.jt.raiders.web.RaidersAction" method="findAllRaiders">			
+		</action>
+		<action name="delete" class="com.epmis.jt.raiders.web.RaidersAction" method="delete">			
+		</action>
+		<action name="deletez" class="com.epmis.jt.raiders.web.RaidersAction" method="deletez">			
+		</action>
+		<action name="save" class="com.epmis.jt.raiders.web.RaidersAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.jt.raiders.web.RaidersAction" method="findById">
+			<result name="success">
+				/web/JT/RAIDERS/update.jsp
+			</result>
+			<result name="look">
+				/web/JT/RAIDERS/look.jsp
+			</result>		
+		</action>
+		<action name="update" class="com.epmis.jt.raiders.web.RaidersAction" method="update">		
+		</action>
+		<!--位置 -->
+		<action name="wz" class="com.epmis.jt.raiders.web.RaidersAction" method="wz">		
+		</action>
+		
+		
+		
+
+	
+	
+	</package>
+</struts>

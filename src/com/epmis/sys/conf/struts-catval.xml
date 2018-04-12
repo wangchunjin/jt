@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="catval" extends="default" namespace="/sys/catval">		 
+		     <action name="CatvalTable" class="com.epmis.sys.web.CatvalAction" method="CatvalTable">
+		     </action>
+		     <action name="AddCatvalTree" class="com.epmis.sys.web.CatvalAction" method="AddCatvalTree">
+		     </action>
+		      <action name="AddCatval" class="com.epmis.sys.web.CatvalAction" method="AddCatval">
+		     </action>
+		      <action name="DelCatval" class="com.epmis.sys.web.CatvalAction" method="DelCatval">
+		     </action>
+		    <action name="AddCatvalAllTree" class="com.epmis.sys.web.CatvalAction" method="AddCatvalAllTree">
+		     </action>
+		    <action name="AddCatvalAll" class="com.epmis.sys.web.CatvalAction" method="AddCatvalAll">
+		     </action>
+	</package>
+	<package name="catvalType" extends="default" namespace="/sys/catvalType">	
+			 <action name="ShowCatvalTypeTable" class="com.epmis.sys.web.CatvalAction" method="ShowCatvalTypeTable">
+		     </action>
+		     <action name="DelCatvalType" class="com.epmis.sys.web.CatvalAction" method="DelCatvalType">
+		     </action>
+		     <action name="AddCatvalCode" class="com.epmis.sys.web.CatvalAction" method="AddCatvalCode">
+		     </action>
+		      <action name="DelCatvalCode" class="com.epmis.sys.web.CatvalAction" method="DelCatvalCode">
+		     </action>
+		      <action name="label" class="com.epmis.sys.web.CatvalAction" method="GetCatvalInfo">
+		      <result name="success">
+		          /web/SYS/CATVAL/label.jsp
+		      </result>
+		     </action>
+		     <action name="UpdateCatvalCode" class="com.epmis.sys.web.CatvalAction" method="UpdateCatvalCode">
+		     </action>		     
+	</package>
+</struts>

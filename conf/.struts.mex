@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="default" location="10,25" size="170,70" />
+  <include file="struts-common.xml" location="265,10" size="150,30" />
+  <include file="struts-proj.xml" location="510,10" size="150,30" />
+  <include file="struts-swbs.xml" location="20,185" size="150,30" />
+  <include file="struts-struct.xml" location="265,185" size="150,30" />
+  <include file="struts-catval.xml" location="510,185" size="150,30" />
+  <include file="struts-code.xml" location="20,290" size="150,30" />
+  <include file="struts-vnmt.xml" location="265,290" size="150,30" />
+  <include file="struts-user.xml" location="510,290" size="150,30" />
+  <include file="struts-role.xml" location="20,395" size="150,30" />
+  <include file="struts-first.xml" location="0,0" size="0,0" />
+  <include file="struts-profile.xml" location="265,395" size="150,30" />
+  <include file="struts-sm.xml" location="510,395" size="150,30" />
+  <include file="struts-km.xml" location="20,500" size="150,30" />
+  <include file="struts-ds.xml" location="265,500" size="150,30" />
+  <include file="struts-cc.xml" location="510,500" size="150,30" />
+  <include file="struts-jd.xml" location="20,605" size="150,30" />
+  <include file="struts-service.xml" location="265,605" size="150,30" />
+</Struts2Diagram>
+

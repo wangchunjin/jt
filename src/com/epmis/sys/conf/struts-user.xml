@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="user" extends="default" namespace="/sys/user">		 
+		     <action name="SysUserTable" class="com.epmis.sys.web.UserAction" method="SysUserTable">
+		     </action>
+		     <action name="SysUserTableByRoleId" class="com.epmis.sys.web.UserAction" method="SysUserTableByRoleId">
+		     </action>
+		     <action name="label" class="com.epmis.sys.web.UserAction" method="GetUserInfo">
+		        <result name="success">
+		              /web/SYS/USER/label.jsp
+		        </result>
+		     </action>
+		      <action name="label_other" class="com.epmis.sys.web.UserAction" method="GetUserInfo">
+		        <result name="success">
+		              /web/SYS/USER/label_other.jsp
+		        </result>
+		     </action>
+		     <action name="label_role">
+		     	<result name="success">
+		              /web/SYS/USER/ROLE/label.jsp
+		        </result>
+		     </action>
+		     <action name="label_module_license">
+		     	<result name="success">
+		              /web/SYS/USER/MODULE_LICENSE/label.jsp
+		        </result>
+		     </action>
+		     <action name="label_module_assign">
+		     	<result name="success">
+		              /web/SYS/USER/MODULE_ASSIGN/label.jsp
+		        </result>
+		     </action>
+		     <action name="label_proj">
+		     	<result name="success">
+		              /web/SYS/USER/PROJ/label.jsp
+		        </result>
+		     </action>
+		     <action name="label_profile">
+		     	<result name="success">
+		              /web/SYS/USER/PROJFILE/FS.jsp
+		        </result>
+		     </action>
+		     
+		     <!-- 系统框架中的用户管理模块     添加权限角色的功能     hxl add  -->
+		     <action name="label_qxjs">
+		     	<result name="success">
+		              /web/SYS/USER/QXJS/FS.jsp
+		        </result>
+		     </action>
+		     
+		     
+		     <action name="AddUser" class="com.epmis.sys.web.UserAction" method="AddUser">
+		     </action>	
+		     <action name="DelUser" class="com.epmis.sys.web.UserAction" method="DelUser">
+		     </action>
+		     <action name="UpdateUser" class="com.epmis.sys.web.UserAction" method="UpdateUser">
+		     </action>
+		      <action name="UpdateUserOther" class="com.epmis.sys.web.UserAction" method="UpdateUserOther">
+		     </action>
+		     <action name="RoleUserTable" class="com.epmis.sys.web.UserAction" method="RoleUserTable">
+		     </action>
+		     <action name="AddRoleUserTree" class="com.epmis.sys.web.UserAction" method="AddRoleUserTree">
+		     </action>	
+		      <action name="AddRoleUser" class="com.epmis.sys.web.UserAction" method="AddRoleUser">
+		     </action>
+		     <action name="DelRoleUser" class="com.epmis.sys.web.UserAction" method="DelRoleUser">
+		     </action>
+		     <action name="ModuleAssignUserTree" class="com.epmis.sys.web.UserAction" method="ModuleAssignUserTree">
+		     </action>
+		     <action name="ModuleLicenseUserTable" class="com.epmis.sys.web.UserAction" method="ModuleLicenseUserTable">
+		     </action>
+		     <action name="UpdateModuleLicenseUser" class="com.epmis.sys.web.UserAction" method="UpdateModuleLicenseUser">
+		     </action>
+		     <action name="UpdateModuleAssignUser" class="com.epmis.sys.web.UserAction" method="UpdateModuleAssignUser">
+		     </action>
+		     <action name="ProjUserTree" class="com.epmis.sys.web.UserAction" method="ProjUserTree">
+		     </action>
+		     <action name="InsertProjUser" class="com.epmis.sys.web.UserAction" method="InsertProjUser">
+		     </action>
+		      <action name="DeleteProjUser" class="com.epmis.sys.web.UserAction" method="DeleteProjUser">
+		     </action>
+		     <action name="SeeProFileTable" class="com.epmis.sys.web.UserAction" method="SeeProFileTable">
+		     </action>
+		     <action name="CheckUserNum" class="com.epmis.sys.web.UserAction" method="CheckUserNum">
+		     </action>
+		     <action name="SetAppUser" class="com.epmis.sys.web.UserAction" method="SetAppUser">
+		     </action>
+	    </package>
+</struts>

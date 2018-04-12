@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="vnmt" extends="default" namespace="/sys/vnmt">		 
+		     <action name="SysVnmtTable" class="com.epmis.sys.web.VnmtAction" method="SysVnmtTable">
+		     </action>	 
+		     <action name="SysVnmtTree" class="com.epmis.sys.web.VnmtAction" method="SysVnmtTree">
+		     </action>
+		     <action name="label" class="com.epmis.sys.web.VnmtAction" method="GetVnmtInfo">
+		        <result name="success">
+		              /web/SYS/VNMT/label.jsp
+		        </result>
+		     </action>
+		     <action name="label_other" class="com.epmis.sys.web.VnmtAction" method="GetVnmtInfo">
+		        <result name="success">
+		              /web/SYS/VNMT/label_other.jsp
+		        </result>
+		     </action>
+		     <action name="label_people">
+		        <result name="success">
+		              /web/SYS/VNMT/VNDT/label_people.jsp
+		        </result>
+		     </action>
+		     <action name="AddVnmt" class="com.epmis.sys.web.VnmtAction" method="AddVnmt">
+		     </action>	
+		     <action name="DelVnmt" class="com.epmis.sys.web.VnmtAction" method="DelVnmt">
+		     </action>
+		     <action name="UpdateVnmt" class="com.epmis.sys.web.VnmtAction" method="UpdateVnmt">
+		     </action>
+		     <action name="UpdateVnmtOther" class="com.epmis.sys.web.VnmtAction" method="UpdateVnmtOther">
+		     </action>
+	    </package>
+	    <package name="vndt" extends="default" namespace="/sys/vndt">
+	         <action name="VndtTable" class="com.epmis.sys.web.VnmtAction" method="VndtTable">
+		     </action>	
+		     <action name="AddVndt" class="com.epmis.sys.web.VnmtAction" method="AddVndt">
+		     </action>	
+		     <action name="DelVndt" class="com.epmis.sys.web.VnmtAction" method="DelVndt">
+		     </action>
+		     <action name="EditVndt" class="com.epmis.sys.web.VnmtAction" method="EditVndt">
+		     	<result name="success">
+		              /web/SYS/VNMT/VNDT/EditPeople.jsp
+		        </result>
+		     </action>
+		     <action name="UpdateVndt" class="com.epmis.sys.web.VnmtAction" method="UpdateVndt">
+		     </action>
+	    </package>
+</struts>

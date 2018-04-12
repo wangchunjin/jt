@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="km_pubdoc" extends="default" namespace="/km/km_pubdoc">
+		     <action name="getUrlListByDocIds" class="com.epmis.km.web.KmDocAction" method="getUrlListByDocIds">
+		     </action>
+			 <action name="ShowDocTree" class="com.epmis.km.web.KmDocAction" method="ShowDocTree">
+		     </action>
+			 <action name="ShowDocTable" class="com.epmis.km.web.KmDocAction" method="ShowDocTable">
+		     </action>
+		     <action name="ShowNewDocTree" class="com.epmis.km.web.KmDocAction" method="ShowNewDocTree">
+		     </action>
+		     <action name="ShowNewDocTable" class="com.epmis.km.web.KmDocAction" method="ShowNewDocTable">
+		     </action>
+		     <action name="label_normal" class="com.epmis.km.web.KmDocAction" method="GetDocInfo">
+		     <result name="success">
+				       /web/KM/KM_PUBDOC/label_normal.jsp
+			     </result>
+		     </action>
+		     <action name="label_other" class="com.epmis.km.web.KmDocAction" method="GetDocInfo">
+		     <result name="success">
+				       /web/KM/KM_PUBDOC/label_other.jsp
+			     </result>
+		     </action>
+		     <action name="label_readme" class="com.epmis.km.web.KmDocAction" method="GetDocInfo">
+		     <result name="success">
+				       /web/KM/KM_PUBDOC/label_readme.jsp
+			     </result>
+		     </action>
+		     <action name="label_version" >
+		     <result name="success">
+				       /web/KM/KM_PUBDOC/label_version.jsp
+			     </result>
+		     </action>
+		     <action name="label_log" >
+		     	<result name="success">
+				       /web/KM/KM_PUBDOC/label_log.jsp
+			     </result>
+		     </action>
+		     <action name="label_attch" >
+		     	<result name="success">
+				       /web/KM/KM_PUBDOC/label_attch.jsp
+			     </result>
+		     </action>
+		     <action name="label_zjlr" >
+		     	<result name="success">
+				       /web/KM/KM_UPLOAD/label_doc.jsp
+			     </result>
+		     </action>
+		     <action name="UpdateDocNormal" class="com.epmis.km.web.KmDocAction" method="UpdateDocNormal">
+		     </action>
+		      <action name="UpdateDocOther" class="com.epmis.km.web.KmDocAction" method="UpdateDocOther">
+		     </action>
+		      <action name="DocVersionTable" class="com.epmis.km.web.KmDocAction" method="DocVersionTable">
+		     </action>
+		      <action name="DocLogTable" class="com.epmis.km.web.KmDocAction" method="DocLogTable">
+		     </action>
+		      <action name="DocAttchTable" class="com.epmis.km.web.KmDocAction" method="DocAttchTable">
+		     </action>
+		     <action name="PlanDocTree" class="com.epmis.km.web.KmDocAction" method="PlanDocTree">
+		     </action>
+		    </package>
+		    <package name="tinymce_plus" extends="default" namespace="/km/plus">
+		       <action name="UploadPlusFile" class="com.epmis.km.web.KmDocAction" method="UploadPlusFile">
+		       </action>
+		       <action name="PlusFileTable" class="com.epmis.km.web.KmDocAction" method="PlusFileTable">
+		       </action>
+		       <action name="DeletePlusFile" class="com.epmis.km.web.KmDocAction" method="DeletePlusFile">
+		       </action>
+		    </package>
+		   <package name="km_upload" extends="default" namespace="/km/km_upload">
+			 <action name="viewDoc" class="com.epmis.km.web.KmDocAction" method="viewDoc">
+				 <result name="office">
+				       /web/KM/KM_UPLOAD/view.jsp
+			     </result>
+			     <result name="pic">
+				       /web/KM/KM_UPLOAD/ViewPic.jsp
+			     </result>
+			     <result name="pdf">
+				       /web/KM/KM_UPLOAD/viewPdf.jsp
+			     </result>
+			     <result name="other">
+				       /web/KM/KM_UPLOAD/viewOther.jsp
+			     </result>
+			     <result name="error">
+				      /web/KM/KM_UPLOAD/viewError.jsp
+			     </result>
+		     </action>
+		     <action name="updateDoc" class="com.epmis.km.web.KmDocAction" method="viewDoc">
+				 <result name="office">
+				       /web/KM/KM_UPLOAD/update.jsp
+			     </result>
+			     <result name="pic">
+				       /web/KM/KM_UPLOAD/ViewPic.jsp
+			     </result>
+			     <result name="pdf">
+				       /web/KM/KM_UPLOAD/viewPdf.jsp
+			     </result>
+			     <result name="other">
+				       /web/KM/KM_UPLOAD/viewOther.jsp
+			     </result>
+			     <result name="error">
+				      /web/KM/KM_UPLOAD/viewError.jsp
+			     </result>
+		     </action>
+		     <action name="copyDoc" class="com.epmis.km.web.KmDocAction" method="copyDoc">
+		     </action>
+		     <action name="saveDoc" class="com.epmis.km.web.KmDocAction" method="saveDoc">
+		     </action>
+		     <action name="downDoc" class="com.epmis.km.web.KmDocAction" method="downDoc">
+		     </action>
+		     <action name="downPackageDoc" class="com.epmis.km.web.KmDocAction" method="downPackageDoc">
+		     </action>
+		     <action name="downDocVersion" class="com.epmis.km.web.KmDocAction" method="downDocVersion">
+		     </action>
+		      <action name="delDoc" class="com.epmis.km.web.KmDocAction" method="delDoc">
+		     </action>
+		     <action name="MoveDoc" class="com.epmis.km.web.KmDocAction" method="MoveDoc">
+		     </action>
+	          <action name="publicDoc" class="com.epmis.km.web.KmDocAction" method="publicDoc">
+		     </action>		
+		     <action name="label_normal" class="com.epmis.km.web.KmDocAction" method="GetDocInfo">
+		     <result name="success">
+				       /web/KM/KM_UPLOAD/updateDocInfo.jsp
+			     </result>
+		     </action>
+		     <action name="PlugDown" class="com.epmis.km.web.KmDocAction" method="PlugDown">
+		     </action>
+		   </package>
+		   <package name="Km_folder" extends="default" namespace="/km/km_folder">
+			 <action name="ShowFolderTree" class="com.epmis.km.web.KmFolderAction" method="ShowFolderTree">
+				 <result name="success">
+				       /web/KM/KM_UPLOAD/view.jsp
+			     </result>
+			     <result name="error">
+				      /web/KM/KM_UPLOAD/viewError.jsp
+			     </result>
+		     </action>	     
+		     <action name="getFullPathNameByFolderId" class="com.epmis.km.web.KmFolderAction" method="getFullPathNameByFolderId">
+		     </action>
+		     <action name="AddFolder" class="com.epmis.km.web.KmFolderAction" method="AddFolder">
+		     </action>
+		     <action name="UpdatePath" class="com.epmis.km.web.KmFolderAction" method="UpdatePath">
+		     </action>			  
+		        
+		     <action name="label" class="com.epmis.km.web.KmFolderAction" method="GetLabel">
+		         <result name="pub">
+				      /web/KM/KM_PUBFOLDER/label.jsp
+			     </result>
+			      <result name="proj">
+				      /web/KM/KM_PROJFOLDER/label.jsp
+			     </result>
+		     </action>
+		     <action name="UpdateFolder" class="com.epmis.km.web.KmFolderAction" method="UpdateFolder">
+		     </action>	
+		     <action name="DeleteFolder" class="com.epmis.km.web.KmFolderAction" method="DeleteFolder">
+		     </action>
+		   </package>
+		   <package name="km_recycle" extends="default" namespace="/km/km_recycle">
+		   	 <action name="ShowRecycleTable" class="com.epmis.km.web.KmDocAction" method="ShowRecycleTable">		   		     
+		     </action>
+		     <action name="ClearDocs" class="com.epmis.km.web.KmDocAction" method="ClearDocs">
+		     </action>
+			 <action name="RevertDocs" class="com.epmis.km.web.KmDocAction" method="RevertDocs">
+		     </action>	     
+		    </package>
+		     <package name="km_search" extends="default" namespace="/km/km_search">
+		   	 <action name="ShowSearchTable" class="com.epmis.km.web.KmDocAction" method="ShowSearchTable">		   		     
+		     </action>    
+		    </package>
+		    <package name="km_fdmd" extends="default" namespace="/km/km_fdmd">
+		      <action name="ShowTypeTable" class="com.epmis.km.web.KmFdmdAction" method="ShowFdmdTypeTable">
+		      </action>
+		      <action name="DelFdmdType" class="com.epmis.km.web.KmFdmdAction" method="DelFdmdType">
+		      </action>
+		      <action name="ShowFdmdTree" class="com.epmis.km.web.KmFdmdAction" method="ShowFdmdTree">
+		      </action>
+		      <action name="AddFdmd" class="com.epmis.km.web.KmFdmdAction" method="AddFdmd">
+		      </action>
+		      <action name="delFdmd" class="com.epmis.km.web.KmFdmdAction" method="delFdmd">
+		      </action>
+		      <action name="UpdateFdmd" class="com.epmis.km.web.KmFdmdAction" method="UpdateFdmd">
+		      </action>
+		      <action name="label" class="com.epmis.km.web.KmFdmdAction" method="GetLabel">
+		         <result name="success">
+				       /web/KM/KM_FOLDMD/label.jsp
+			     </result>
+		      </action>
+		    </package>
+</struts>

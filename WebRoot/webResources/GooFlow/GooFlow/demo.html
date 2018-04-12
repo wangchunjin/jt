@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>流程图DEMO</title>
+<!--[if lt IE 9]>
+<?import namespace="v" implementation="#default#VML" ?>
+<![endif]-->
+<!--<link rel="stylesheet" type="text/css" href="codebase/GooFlow2.css"/>-->
+<link rel="stylesheet" type="text/css" href="codebase/GooFlow.css"/>
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript" src="../GooFunc.js"></script>
+<script type="text/javascript" src="../json2.js"></script>
+<link rel="stylesheet" type="text/css" href="../default.css"/>
+<script type="text/javascript" src="codebase/GooFlow.js"></script>
+<script type="text/javascript" src="codebase/popwin.js"></script>
+<script type="text/javascript">
+var property={
+	width:1200,
+	height:500,
+	toolBtns:["start","end","task","node","chat","state","plug","join","fork","complex","price"],
+	haveHead:true,
+	headBtns:["new","open","save","undo","redo","reload"],//如果haveHead=true，则定义HEAD区的按钮
+	haveTool:true,
+	haveGroup:false,
+	useOperStack:true
+};
+var remark={
+	cursor:"选择指针",
+	direct:"转换连线",
+	start:"开始活动",
+	end:"结束活动",
+	task:"人工活动",
+	node:"自动结点",
+	chat:"决策结点",
+	state:"状态结点",
+	plug:"附加插件",
+	fork:"分支结点",
+	"join":"联合结点",
+	complex:"复合结点",
+	price:"金额",
+	group:"组织划分框编辑开关"
+};
+var wf;
+$(document).ready(function(){
+	wf=$.createGooFlow($("#wf"),property);
+	wf.setNodeRemarks(remark);
+	wf.onItemDel=function(id,type){
+		return confirm("确定要删除该单元吗?");
+	}
+	jsondata={
+		title:"流程设计器",
+		nodes:{
+			"wf_node_1":{"name":"开始","left":82,"top":116,"type":"start round","width":24,"height":24,"alt":true},
+			"wf_node_2":{"name":"结束","left":800,"top":114,"type":"end","width":86,"height":24,"alt":true},
+			"wf_node_3":{"name":"一部","left":176,"top":121,"type":"task","width":86,"height":24,"alt":true},
+			"wf_node_4":{"name":"二部","left":318,"top":119,"type":"task","width":86,"height":24,"alt":true},
+			"wf_node_14":{"name":"50万","left":464,"top":119,"type":"price","width":86,"height":24,"alt":true},
+			"wf_node_18":{"name":"副总","left":641,"top":66,"type":"task","width":86,"height":24,"alt":true},
+			"wf_node_19":{"name":"部门经理","left":639,"top":160,"type":"task","width":86,"height":24,"alt":true},
+			"wf_node_21_i7pn9k0lkj":{"name":"node_21","left":208,"top":260,"type":"task","width":86,"height":24,"alt":true},
+			"wf_node_22_qclvqiemi1":{"name":"node_22","left":345,"top":259,"type":"task","width":86,"height":24,"alt":true},
+			"wf_node_23_0tfevlqg7u":{"name":"node_23","left":634,"top":259,"type":"task","width":86,"height":24,"alt":true},
+			"wf_node_24_4h16yaq0qg":{"name":"node_24","left":493,"top":260,"type":"task","width":86,"height":24,"alt":true},
+			"wf_node_25_aytfcfhmds":{"name":"node_25","left":76,"top":258,"type":"task","width":86,"height":24,"alt":true}
+		},
+		lines:{
+			"wf_line_5":{"type":"sl","from":"wf_node_1","to":"wf_node_3","name":""},
+			"wf_line_6":{"type":"sl","from":"wf_node_3","to":"wf_node_4","name":""},
+			"wf_line_15":{"type":"sl","from":"wf_node_4","to":"wf_node_14","name":""},
+			"wf_line_23":{"type":"lr","M":787.5,"from":"wf_node_18","to":"wf_node_2","name":""},
+			"wf_line_24":{"type":"lr","M":787.5,"from":"wf_node_19","to":"wf_node_2","name":""},
+			"wf_line_25":{"type":"lr","M":595.5,"from":"wf_node_14","to":"wf_node_18","name":""},
+			"wf_line_26":{"type":"lr","M":594.5,"from":"wf_node_14","to":"wf_node_19","name":""},
+			"wf_line_26_lm8xfq6dzp":{"type":"sl","from":"wf_node_25_aytfcfhmds","to":"wf_node_21_i7pn9k0lkj","name":"","alt":true},
+			"wf_line_27_7dduxhhiol":{"type":"sl","from":"wf_node_21_i7pn9k0lkj","to":"wf_node_22_qclvqiemi1","name":"","alt":true},
+			"wf_line_29_7xdh4l8cgf":{"type":"tb","from":"wf_node_24_4h16yaq0qg","to":"wf_node_23_0tfevlqg7u","name":"","alt":true,"M":271.5},
+			"wf_line_31_edq85hvvt3":{"type":"sl","from":"wf_node_23_0tfevlqg7u","to":"wf_node_19","name":"","alt":true},
+			"wf_line_32_vbyhzgzinv":{"type":"sl","from":"wf_node_22_qclvqiemi1","to":"wf_node_24_4h16yaq0qg","name":"","alt":true}
+		},
+		areas:{
+			
+		}
+	};
+	wf.$max=9;
+	wf.loadData(jsondata);
+});
+var out;
+function Export(){
+    document.getElementById("result").value=JSON.stringify(wf.exportData());
+}
+</script>
+</head>
+<body>
+<div id="wf" style="margin:10px"></div>
+<input id="submit" type="button" value='导出结果' onclick="Export()"/>
+<textarea id="result" rows="10" cols="100"></textarea>
+</body>
+</html>

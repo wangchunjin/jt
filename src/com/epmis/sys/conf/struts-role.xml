@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<package name="role" extends="default" namespace="/sys/role">		 
+             <action name="SysRoleTree" class="com.epmis.sys.web.RoleAction" method="SysRoleTree">
+		     </action>	
+		      <action name="label" class="com.epmis.sys.web.RoleAction" method="GetRoleInfo">
+		        <result name="success">
+		              /web/SYS/ROLE/label.jsp
+		        </result>
+		     </action>
+		     <action name="label_user" class="com.epmis.sys.web.RoleAction" method="label_user">
+		     	<result name="success" >
+		              /web/SYS/ROLE/USER/label.jsp
+		        </result>
+		     </action>
+		     <action name="label_module_license">
+		     	<result name="success">
+		              /web/SYS/ROLE/MODULE_LICENSE/label.jsp
+		        </result>
+		     </action>
+		     <action name="label_module_assign">
+		     	<result name="success">
+		              /web/SYS/ROLE/MODULE_ASSIGN/label.jsp
+		        </result>
+		     </action>
+		     <action name="label_proj">
+		     	<result name="success">
+		              /web/SYS/ROLE/PROJ/label.jsp
+		        </result>
+		     </action>
+		     <action name="AddRole" class="com.epmis.sys.web.RoleAction" method="AddRole">
+		     </action>
+		     <action name="DelRole" class="com.epmis.sys.web.RoleAction" method="DelRole">
+		     </action>
+		     <action name="UpdateRole" class="com.epmis.sys.web.RoleAction" method="UpdateRole">
+		     </action>
+		     <action name="RoleUserTable" class="com.epmis.sys.web.RoleAction" method="RoleUserTable">
+		     </action>
+		     <action name="AddUserTable" class="com.epmis.sys.web.RoleAction" method="AddUserTable">
+		     </action>
+		     <action name="AddRoleUser" class="com.epmis.sys.web.RoleAction" method="AddRoleUser">
+		     </action>
+		     <action name="DelRoleUser" class="com.epmis.sys.web.RoleAction" method="DelRoleUser">
+		     </action>	  
+		     <action name="ModuleAssignRoleTree" class="com.epmis.sys.web.RoleAction" method="ModuleAssignRoleTree">
+		     </action>
+		     <action name="ModuleLicenseRoleTable" class="com.epmis.sys.web.RoleAction" method="ModuleLicenseRoleTable">
+		     </action>
+		     <action name="UpdateModuleLicenseRole" class="com.epmis.sys.web.RoleAction" method="UpdateModuleLicenseRole">
+		     </action>
+		     <action name="UpdateModuleAssignRole" class="com.epmis.sys.web.RoleAction" method="UpdateModuleAssignRole">
+		     </action>
+		     <action name="ProjRoleTree" class="com.epmis.sys.web.RoleAction" method="ProjRoleTree">
+		     </action>
+		     <action name="InsertProjRole" class="com.epmis.sys.web.RoleAction" method="InsertProjRole">
+		     </action>
+		      <action name="DeleteProjRole" class="com.epmis.sys.web.RoleAction" method="DeleteProjRole">
+		     </action>
+	    </package>
+	    
+</struts>

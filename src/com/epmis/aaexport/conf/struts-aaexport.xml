@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="allexports" extends="default" namespace="/export/texport">
+	      
+	      <action name="FWQKexport" class="com.epmis.aaexport.web.AexportAction" method="FWQKexport">
+	     </action>
+	     <action name="Orderexport" class="com.epmis.aaexport.web.AexportAction" method="Orderexport">
+	     </action>
+	</package>
+</struts>

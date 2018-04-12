@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="al" extends="default" namespace="/pt/anli">
+		<action name="showOther" class="com.epmis.al.web.OtherAction" method="showOther">
+		 </action>
+		 <action name="addOther" class="com.epmis.al.web.OtherAction" method="addOther">
+		 </action>
+		 <action name="delOther" class="com.epmis.al.web.OtherAction" method="delOther">
+		 </action>
+		  <action name="update" class="com.epmis.al.web.OtherAction" method="OtherById">
+		  	<result name="success">
+				/web/PT/ANLI/updateOther.jsp
+			</result>
+		 </action>
+		 <action name="updateone" class="com.epmis.al.web.OtherAction" method="OtherById">
+		  	<result name="success">
+				/web/PT/ANLI/SelOther.jsp
+			</result>
+		 </action>
+		 <action name="showHylyName" class="com.epmis.al.web.OtherAction" method="showHylyName">
+		  	<result name="success">
+				/web/PT/ANLI/top.jsp
+			</result>
+		 </action>
+		 <action name="updateOther" class="com.epmis.al.web.OtherAction" method="updateOther">
+		</action>
+		<action name="SelOther" class="com.epmis.al.web.OtherAction" method="SelOther">
+		</action>
+    </package>
+</struts>

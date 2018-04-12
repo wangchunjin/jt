@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="tcar" namespace="/car/tcar" extends="default">
+		<action name="findAllCar" class="com.epmis.car.web.CarAction" method="findAllCar">			
+		</action>
+		<action name="delete" class="com.epmis.car.web.CarAction" method="delete">			
+		</action>
+		<action name="deletez" class="com.epmis.car.web.CarAction" method="deletez">			
+		</action>
+		<action name="save" class="com.epmis.car.web.CarAction" method="save">		
+		</action>
+		<action name="findById" class="com.epmis.car.web.CarAction" method="findById">
+			<result name="success">
+				/web/CAR/CARR/update.jsp
+			</result>
+			<result name="fuzhi">
+				/web/CAR/CARR/fuzhi.jsp
+			</result>		
+		</action>
+		<action name="update" class="com.epmis.car.web.CarAction" method="update">		
+		</action>
+		<action name="hf" class="com.epmis.car.web.CarAction" method="hf">		
+		</action>
+		<action name="xs" class="com.epmis.car.web.CarAction" method="xs">		
+		</action>
+		<action name="yc" class="com.epmis.car.web.CarAction" method="yc">		
+		</action>
+		<!--位置 -->
+		<action name="wz" class="com.epmis.car.web.CarAction" method="wz">		
+		</action>
+		<!--复制 -->
+		<action name="fuzhi" class="com.epmis.car.web.CarAction" method="fuzhi">		
+		</action>
+		<!--销量管理 -->
+		<action name="xiaoliang" class="com.epmis.car.web.CarAction" method="xiaoliang">	
+			<result name="success">
+				/web/CAR/CARR/xiaoliang.jsp
+			</result>	
+		</action>
+		<!-- 销量管理 -->
+		<action name="upxl" class="com.epmis.car.web.CarAction" method="upxl">		
+		</action>
+		
+		
+
+	
+	
+	</package>
+</struts>
