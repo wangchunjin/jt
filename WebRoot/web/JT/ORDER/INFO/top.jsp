@@ -16,8 +16,7 @@
 			parent.LeftFrame.TwoFrame.$.messager.alert("错误","上批订单还未处理。");
 			return;
 		}
-		
-		
+
 		var result2=GetXmlBySql("select count(num)nums from (select count(lend_id)num,lend_id,(select name from lender l where l.lender_id=o.lend_id)lender_name from order_info o where approve_status='1' and transfer_status='0' and fun_change='1' and bd is NULL group BY lend_id ) c ORDER BY num desc limit 1");
 		var nums=result2[0].nums;
 		if(nums==0){
@@ -82,8 +81,8 @@
             parent.LeftFrame.TwoFrame.$.messager.alert("错误","请选中要查看的用户！");
             return;
         }
-        var orderNum = [];
 
+        var orderNum = [];
         for (var i= 0;i<rows.length;i++) {
             var transferStatus = new String();
             var str = "8";
@@ -102,7 +101,6 @@
         date.opt = "daifa";
         date.orderList = orderNum;
         parent.LeftFrame.TwoFrame.$.messager.confirm("提醒","请确认打款",function(res){
-
             if(res){
                 var res = IntoActionByUrl("http://106.14.163.15:8081/jietiao/servlet/Houses",date);
                 if(res[0].result=="success"){
